@@ -6,6 +6,7 @@ body {
   max-width: 100vw;
   z-index: 0;
 }
+/* title */
 .nav {
   display: flex;
   justify-content: center;
@@ -21,14 +22,7 @@ h1 {
   background: rgba(233, 57, 128, 255);
   margin-top: -1vh;
 }
-h3 {
-  font-family: "Tilt Neon";
-  font-size: 2.5vw;
-  font-weight: bold;
-  margin: 1vh 1vw 3vh 1vw;
-  color: rgb(247, 247, 20);
-  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-}
+/* images */
 #melting-img {
   position: absolute;
   width: 17.5rem;
@@ -45,6 +39,15 @@ h3 {
   bottom: 1vh;
   z-index: 2;
 }
+/* order container */
+h3 {
+  font-family: "Tilt Neon";
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin: 1vh 1vw 3vh 1vw;
+  color: rgb(247, 247, 20);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
 .container {
   position: relative;
   display: flex;
@@ -53,7 +56,7 @@ h3 {
   width: 100vw;
   height: 80vh;
 }
-#prices-box,
+#sizes-box,
 #flavors-box,
 #toppings-box,
 #basket-box {
@@ -69,7 +72,6 @@ h3 {
 #basket-box {
   background: rgba(249, 128, 176, 255);
 }
-
 .catagorie {
   position: relative;
   display: flex;
@@ -81,9 +83,11 @@ label {
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
-.flavors-box-list {
+.scoops-cont,
+.bowl-cone-cont,
+.flavors-list-cont,
+.toppings-list-cont {
   display: flex;
   align-items: space-between;
   justify-content: center;
 }
-
