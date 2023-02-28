@@ -91,3 +91,9 @@ label {
   align-items: space-between;
   justify-content: center;
 }
+.scoops-cont {
+  margin-left: -2vw;
+}
+.bowl-cone-cont {
+margin-top: 1vh;
+}
