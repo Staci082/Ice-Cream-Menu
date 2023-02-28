@@ -83,17 +83,24 @@ label {
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
+
 .scoops-cont,
-.bowl-cone-cont,
 .flavors-list-cont,
-.toppings-list-cont {
+.toppings-list-cont,
+.bowl-cone-list {
   display: flex;
   align-items: space-between;
   justify-content: center;
+  color: rgba(255, 250, 251, 255);
+  text-shadow: 1px 1px 1px black;
 }
+
 .scoops-cont {
   margin-left: -2vw;
 }
 .bowl-cone-cont {
-margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vh;
 }
