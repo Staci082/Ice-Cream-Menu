@@ -45,7 +45,7 @@ h1 {
 /* order container */
 h3 {
   font-family: "Tilt Neon";
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 1vh 1vw 3vh 1vw;
   color: rgb(247, 247, 20);
@@ -100,12 +100,14 @@ label {
   text-shadow: 1px 1px 1px black;
 }
 
-.scoops-cont {
+.scoops-cont,
+.bowl-cone-list {
   margin-left: -2vw;
 }
-.bowl-cone-cont {
+.bowl-cone-list {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 2vh;
 }
