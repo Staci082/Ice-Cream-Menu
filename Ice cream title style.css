@@ -1,12 +1,19 @@
 body {
-    background: #ffecf2;
+  background: #ffecf2;
+}
+.navbar {
+  height: 8vh;
+  border: solid 2px lime;
+  z-index: 1;
 }
 .blob-cont {
-    width: 75%;
-    margin-top: -340px;
-    margin-left: -300px;
-
+ position: relative;
+  width: 1250px;
+  height: 1200px;
+  margin-top: -480px;
+  margin-left: -300px;
+  overflow: hidden;
 }
 svg {
-    background: #ffecf2;
+  background: #ffecf2;
 }
