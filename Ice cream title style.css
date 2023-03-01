@@ -30,8 +30,8 @@ h2 {
   font-size: 6rem;
   font-weight: bold;
   color: rgb(247, 247, 20);
-  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-  margin-top: -10px;
+  text-shadow: 2px 2px 0 #bcbcbc;
+  margin-top: -1vh;
   margin-left: 1vw;
 }
 h3 {
@@ -65,8 +65,8 @@ grid-template-rows: auto;
 .blob-cont {
   display: flex;
   position: absolute;
-  width: 1400px;
-  height: 1300px;
+  width: 80vw;
+  height: 134vh;
   margin-top: -480px;
   margin-left: -300px;
   overflow: hidden;
@@ -79,8 +79,8 @@ grid-template-rows: auto;
     width: 40%;
     height: auto;
     z-index: 1;
-    left: 380px;
-    bottom: -20px;
+    left: 20vw;
+    bottom: -3vh;
 }
 svg {
   background: #ffecf2;
@@ -98,11 +98,11 @@ svg {
   cursor: pointer;
   display: inline-block;
   font-family: "Tilt Neon";
-  font-size: 4rem;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
   font-weight: bold;
   margin-left: 230px;
   outline: none;
-  padding: 1rem 1.3rem;
   quotes: auto;
   text-align: center;
   text-decoration: none;
@@ -120,11 +120,4 @@ svg {
 
 .order-button:active {
   transform: scale(1.025);
-}
-
-@media (min-width: 768px) {
-  .order-button {
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
-  }
 }
