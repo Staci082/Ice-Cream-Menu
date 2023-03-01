@@ -28,15 +28,15 @@ h1 {
   width: 17.5rem;
   height: auto;
   top: -210px;
-  left: 6.5vw;
+  left: 5vw;
   z-index: 3;
 }
 #img-bowl {
   position: absolute;
   width: 22vw;
   height: auto;
-  left: -15vw;
-  bottom: 1vh;
+  left: -8vw;
+  bottom: 0vh;
   z-index: 2;
 }
 /* order container */
@@ -52,8 +52,8 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100vw;
+  justify-content: space-evenly;
+  width: auto;
   height: 80vh;
 }
 #sizes-box,
