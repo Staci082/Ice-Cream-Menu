@@ -4,11 +4,17 @@ body {
 }
 
 /* navigation bar */
-.navbar {
+.nav,
+.logo {
   display: flex;
-  justify-content: space-evenly;
   height: 8vh;
   z-index: 1;
+}
+.nav {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
 }
 
 /* text */
@@ -27,7 +33,7 @@ h2 {
   color: rgb(247, 247, 20);
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   margin-top: -10px;
-  margin-right: 250px;
+  margin-left: 10px;
 }
 h3 {
   font-family: "Tilt Neon";
@@ -66,7 +72,7 @@ grid-template-rows: auto;
   overflow: hidden;
   z-index: 0;
 }
-
+ 
 /* exploding ice cream image*/
 .blob-cont > img {
     position: absolute;
@@ -74,7 +80,7 @@ grid-template-rows: auto;
     height: auto;
     z-index: 1;
     left: 330px;
-    bottom: 150px;
+    bottom: 100px;
 }
 svg {
   background: #ffecf2;
