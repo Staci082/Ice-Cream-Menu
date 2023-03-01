@@ -1,12 +1,17 @@
 body {
+    height: 100%;
   background: #ffecf2;
 }
+
+/* navigation bar */
 .navbar {
   display: flex;
   justify-content: space-evenly;
   height: 8vh;
   z-index: 1;
 }
+
+/* text */
 h1 {
     font-family: "Tilt Neon";
     font-size: 6rem;
@@ -32,11 +37,15 @@ h3 {
   text-shadow: 2px 2px 0 #bcbcbc;
   margin-top: -10px;
 }
+
+/* body container */
 .main-cont {
 display: grid;
 grid-template-columns:  1fr 1fr;
 grid-template-rows: auto;
 }
+
+/* slogan container */
 .slogan-cont {
   grid-column: 2/3;
   display: flex;
@@ -44,8 +53,9 @@ grid-template-rows: auto;
   z-index: 2;
   margin-left: -190px;
   margin-top: 100px;
-
 }
+
+/* background blob container */
 .blob-cont {
   display: flex;
   position: absolute;
@@ -56,6 +66,8 @@ grid-template-rows: auto;
   overflow: hidden;
   z-index: 0;
 }
+
+/* exploding ice cream image*/
 .blob-cont > img {
     position: absolute;
     width: 40%;
