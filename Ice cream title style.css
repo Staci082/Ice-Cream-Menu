@@ -9,7 +9,7 @@ body {
 }
 h1 {
     font-family: "Tilt Neon";
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: bold;
     color: rgb(14, 14, 14);
     text-shadow: 2px 2px 0 #bcbcbc;
@@ -22,7 +22,7 @@ h2 {
   color: rgb(247, 247, 20);
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   margin-top: -10px;
-  margin-right: 200px;
+  margin-right: 250px;
 }
 h3 {
   font-family: "Tilt Neon";
@@ -33,29 +33,43 @@ h3 {
   margin-top: -10px;
 }
 .main-cont {
-  display: flex;
+display: grid;
+grid-template-columns:  1fr 1fr;
+grid-template-rows: auto;
 }
 .slogan-cont {
+  grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  border: 2px black solid;
-  z-index: 1;
-  right: 10px;
+  z-index: 2;
+  margin-left: -190px;
+  margin-top: 100px;
+
 }
 .blob-cont {
+  display: flex;
   position: absolute;
-  width: 1250px;
-  height: 1200px;
+  width: 1400px;
+  height: 1300px;
   margin-top: -480px;
   margin-left: -300px;
   overflow: hidden;
   z-index: 0;
+}
+.blob-cont > img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+    left: 250px;
+    bottom: 20px;
 }
 svg {
   background: #ffecf2;
 }
 
 .order-button {
+  width: 40%;
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
@@ -66,10 +80,9 @@ svg {
   cursor: pointer;
   display: inline-block;
   font-family: "Tilt Neon";
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  letter-spacing: -0.24px;
-  margin: 0;
+  margin-left: 350px;
   outline: none;
   padding: 1rem 1.3rem;
   quotes: auto;
