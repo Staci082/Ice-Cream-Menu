@@ -2,18 +2,98 @@ body {
   background: #ffecf2;
 }
 .navbar {
+  display: flex;
+  justify-content: space-evenly;
   height: 8vh;
-  border: solid 2px lime;
   z-index: 1;
 }
+h1 {
+    font-family: "Tilt Neon";
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(14, 14, 14);
+    text-shadow: 2px 2px 0 #bcbcbc;
+}
+
+h2 {
+  font-family: "Tilt Neon";
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(247, 247, 20);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  margin-top: -10px;
+  margin-right: 200px;
+}
+h3 {
+  font-family: "Tilt Neon";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(14, 14, 14);
+  text-shadow: 2px 2px 0 #bcbcbc;
+  margin-top: -10px;
+}
+.main-cont {
+  display: flex;
+}
+.slogan-cont {
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  z-index: 1;
+  right: 10px;
+}
 .blob-cont {
- position: relative;
+  position: absolute;
   width: 1250px;
   height: 1200px;
   margin-top: -480px;
   margin-left: -300px;
   overflow: hidden;
+  z-index: 0;
 }
 svg {
   background: #ffecf2;
+}
+
+.order-button {
+  appearance: none;
+  background-color: rgb(247, 247, 20);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(192, 192, 16) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Tilt Neon";
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.order-button:hover {
+  background-color: rgb(140, 223, 222);
+  box-shadow: rgb(83, 134, 133) 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.order-button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .order-button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
 }
