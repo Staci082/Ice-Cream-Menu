@@ -58,11 +58,11 @@ grid-template-rows: auto;
 }
 .blob-cont > img {
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: auto;
     z-index: 1;
-    left: 250px;
-    bottom: 20px;
+    left: 330px;
+    bottom: 150px;
 }
 svg {
   background: #ffecf2;
