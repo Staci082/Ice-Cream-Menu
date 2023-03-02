@@ -55,7 +55,7 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
- justify-content: center;
+  justify-content: center;
   width: auto;
   height: 80vh;
 }
@@ -156,19 +156,62 @@ label {
   transform: scale(1.025);
 }
 
+/* media queries*/
 
-@media (max-width: 1200px) {
+/* tablet size*/
+@media (max-width: 1300px) {
   .container {
     background: red;
   }
+  #sizes-box,
+#flavors-box,
+#toppings-box,
+#basket-box {
+  width: 20vw;
 }
+label {
+  font-size: 2vw;
+}
+}
+
+/* phone size*/
 @media (max-width: 768px )  {
+  h3 {
+    font-size: 6vw;
+  }
   .container {
     background: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
+  #sizes-box,
+  #flavors-box,
+  #toppings-box,
+  #basket-box {
+  width: 80vw;
+  height: 15vh;
+  }
+  #melting-img {
+    display: none;
+  }
+.scoops-cont,
+.flavors-list-cont,
+.toppings-list-cont,
+.bowl-cone-list {
+  display: none;
 }
+}
+/* small phone size*/
 @media (max-width: 576px) {
   .container {
     background: blue;
+  }
+  #sizes-box,
+  #flavors-box,
+  #toppings-box,
+  #basket-box {
+  width: 95vw;
+  height: 15vh;
   }
 }
