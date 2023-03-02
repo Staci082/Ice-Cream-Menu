@@ -163,6 +163,9 @@ label {
   .container {
     background: red;
   }
+  h1 {
+    font-size: 90px;
+  }
   #sizes-box,
 #flavors-box,
 #toppings-box,
@@ -176,20 +179,23 @@ label {
 
 /* phone size*/
 @media (max-width: 768px )  {
-  h3 {
-    font-size: 6vw;
-  }
   .container {
     background: violet;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+h1 {
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 6vw;
+  }
   #sizes-box,
   #flavors-box,
   #toppings-box,
   #basket-box {
-  width: 80vw;
+  width: 85vw;
   height: 15vh;
   }
   #melting-img {
@@ -207,11 +213,14 @@ label {
   .container {
     background: blue;
   }
+  h1 {
+    font-size: 60px;
+  }
   #sizes-box,
   #flavors-box,
   #toppings-box,
   #basket-box {
-  width: 95vw;
+  width: 90vw;
   height: 15vh;
   }
 }
