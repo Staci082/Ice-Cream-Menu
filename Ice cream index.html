@@ -18,7 +18,7 @@
         </div>
         
             <div class="row, container">
-                <img id="img-bowl" src="Images/bowl.png" />
+
                 <div class="col-sm-3" id="sizes-box">
 <!--size box-->
                     <div class="catagorie">
@@ -28,19 +28,20 @@
                     <div class="scoops-cont">
                         <ul class="scoops-list" style="list-style: none">
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop1" />
+                                <input type="radio" name="scoopbtn" id="scoop1" value="1scoop"/>
                                 <label for="a-opt" class="label">1 scoop................1€</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop2" />
+                                <input type="radio" name="scoopbtn" id="scoop2" value="2scoop"/>
                                 <label for="b-opt"class="label">2 scoops.............2€</label>
                             </li>
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop3" />
+                                <input type="radio" name="scoopbtn" id="scoop3" value="3scoop"/>
                                 <label for="c-opt" class="label">3 scoops.............3€</label>
                             </li>
                         </ul>
+                        <img id="img-bowl" src="Images/bowl.png" />
                     </div>
 <!--bowl-cone-list-->
                     <div class="bowl-cone-cont">
@@ -66,27 +67,25 @@
                     <div class="flavors-list-cont">
                     <div class="flavors-list">
 
-                      <form class="flavors-form" >
-
-                        <input type="checkbox" id="vanilla">
+                        <input type="checkbox" name="flavor" id="vanilla">
                         <label for="vanilla">vanilla</label><br>
+                        <input type="number" min="0" max="3" id="vanillainput" placeholder="" />
 
-                        <input type="checkbox" id="chocolate">
+                        <input type="checkbox" name="flavor" id="chocolate">
                         <label for="chocolate">chocolate</label><br>
 
-                        <input type="checkbox" id="strawberry">
+                        <input type="checkbox" name="flavor" id="strawberry">
                         <label for="strawberry">strawberry</label><br>
 
-                        <input type="checkbox" id="pistachio">
+                        <input type="checkbox" name="flavor" id="pistachio">
                         <label for="pistachio">pistachio</label><br>
 
-                        <input type="checkbox" id="banana">
+                        <input type="checkbox" name="flavor" id="banana">
                         <label for="banana">banana</label><br>
 
-                        <input type="checkbox" id="chocolate chip">
+                        <input type="checkbox" name="flavor" id="chocolate chip">
                         <label for="chocolate chip">chocolate chip</label><br>
                         
-                      </form>
                     </div>
                 </div>
                 </div>
@@ -99,27 +98,28 @@
                     <div class="toppings-list-cont">
                     <div class="toppings-list">
 
-                        <form class="toppings-form" action="">
 
-                        <input type="checkbox" id="whipped cream">
+                        <input type="checkbox" name="topping" id="whipped cream">
                         <label for="whipped cream">whipped cream</label><br>
 
-                        <input type="checkbox" id="sprinkles">
+                        <input type="checkbox" name="topping" id="sprinkles">
                         <label for="sprinkles">sprinkles</label><br>
 
-                        <input type="checkbox" id="chocolate sauce">
+                        <input type="checkbox" name="topping" id="chocolate sauce">
                           <label for="chocolate sauce">chocolate sauce</label><br>
 
-                        <input type="checkbox" id="caramel sauce">
+                        <input type="checkbox" name="topping" id="caramel sauce">
                         <label for="caramel sauce">caramel sauce</label><br>
 
-                        <input type="checkbox" id="m&m's">
+                        <input  type="checkbox" name="topping" id="m&m's">
                         <label for="m&m's">m&m's</label><br>
 
-                        <input type="checkbox" id="marshmellows">
+                        <input  type="checkbox" name="topping" id="marshmellows">
                         <label for="marshmellows">marshmellows</label><br>
 
-                        </form>
+                        <input  type="checkbox" name="topping" id="notoppings">
+                        <label for="notoppings">none</label><br>
+
                     </div>
                   </div>
 
@@ -140,5 +140,5 @@
                 </div>
             
         </div>
-       
+        <script src="Ice cream yeehaw.js"></script>
 </html>

@@ -7,7 +7,6 @@ body {
   z-index: 0;
   user-select: none; /* <--- this removes blinking line that appears after clicking on text */
 }
-
 /* title */
 .nav {
   display: flex;
@@ -17,7 +16,7 @@ body {
 }
 h1 {
   font-family: "Tilt Neon";
-  font-size: 6rem;
+  font-size: 6vw;
   font-weight: bold;
   color: rgb(247, 247, 20);
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
@@ -46,7 +45,7 @@ h1 {
 /* order container */
 h3 {
   font-family: "Tilt Neon";
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   font-weight: bold;
   margin: 1vh 1vw 3vh 1vw;
   color: rgb(247, 247, 20);
@@ -56,7 +55,7 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+ justify-content: center;
   width: auto;
   height: 80vh;
 }
@@ -71,6 +70,7 @@ h3 {
   border-radius: 15px;
   background: rgb(140, 223, 222);
   z-index: 1;
+  margin: 0 1vw 0 1vw;
 }
 #flavors-box,
 #basket-box {
@@ -86,7 +86,7 @@ h3 {
 /* form containers */
 label {
   font-family: "Tilt Neon";
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   padding-bottom: 10px;
 }
 
@@ -104,13 +104,16 @@ label {
 .scoops-cont,
 .bowl-cone-list {
   margin-left: -2vw;
+  z-index: 3;
+}
+.alert-scoops {
+
 }
 .bowl-cone-list {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: vh;
 }
 .basket-output {
   height: 40vh;
@@ -151,4 +154,21 @@ label {
 
 .orderbtn:active {
   transform: scale(1.025);
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    background: red;
+  }
+}
+@media (max-width: 768px )  {
+  .container {
+    background: violet;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    background: blue;
+  }
 }

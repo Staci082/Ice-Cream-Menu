@@ -87,7 +87,7 @@ svg {
   background: #ffecf2;
 }
 
-.order-button {
+.orderbtn {
   width: 40%;
   appearance: none;
   background-color: rgb(247, 247, 20);
@@ -113,12 +113,12 @@ svg {
   touch-action: manipulation;
 }
 
-.order-button:hover {
+.orderbtn:hover {
   background-color: rgb(140, 223, 222);
   box-shadow: rgb(83, 134, 133) 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
-.order-button:active {
+.orderbtn:active {
   transform: scale(1.025);
 }
