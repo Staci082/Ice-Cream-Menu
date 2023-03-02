@@ -5,6 +5,7 @@ body {
   height: 100vh;
   max-width: 100vw;
   z-index: 0;
+  user-select: none; /* <--- this removes blinking line that appears after clicking on text */
 }
 
 /* title */
@@ -75,13 +76,13 @@ h3 {
 #basket-box {
   background: rgba(249, 128, 176, 255);
 }
-.catagorie {
+.catagorie,
+.orderbtn-cont {
   position: relative;
   display: flex;
   justify-content: center;
   width: auto;
 }
-
 /* form containers */
 label {
   font-family: "Tilt Neon";
@@ -111,8 +112,13 @@ label {
   justify-content: space-evenly;
   margin-top: vh;
 }
-.order-button {
-  width: 60%;
+.basket-output {
+  height: 40vh;
+  width: auto;
+  border: black 2px solid;
+}
+.orderbtn {
+  width: 70%;
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
@@ -125,6 +131,7 @@ label {
   font-family: "Tilt Neon";
   font-size: 1rem;
   padding: 0.5rem 0 1rem 0;
+  margin-top: 2vh;
   font-weight: bold;
   outline: none;
   quotes: auto;
@@ -134,15 +141,14 @@ label {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  
 }
 
-.order-button:hover {
+.orderbtn:hover {
   background-color: rgb(140, 223, 222);
   box-shadow: rgb(83, 134, 133) 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
-.order-button:active {
+.orderbtn:active {
   transform: scale(1.025);
 }

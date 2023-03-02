@@ -1,6 +1,7 @@
 body {
-    height: 100%;
+  height: 100%;
   background: #ffecf2;
+  user-select: none; /* <--- this removes blinking line that appears after clicking on text */
 }
 
 /* navigation bar */
@@ -11,18 +12,18 @@ body {
   z-index: 1;
 }
 .nav {
-    width: 50vw;
-    display: flex;
-    justify-content: flex-end;
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* text */
 h1 {
-    font-family: "Tilt Neon";
-    font-size: 5rem;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px 0 #bcbcbc;
+  font-family: "Tilt Neon";
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 0 #bcbcbc;
 }
 
 h2 {
@@ -38,7 +39,7 @@ h3 {
   font-family: "Tilt Neon";
   font-size: 1.5rem;
   font-weight: bold;
-  color: #FF0066;
+  color: #ff0066;
   text-shadow: 2px 2px 0 #bcbcbc;
   margin-top: 1vh;
   margin-right: 3vw;
@@ -47,9 +48,9 @@ h3 {
 
 /* body container */
 .main-cont {
-display: grid;
-grid-template-columns:  1fr 1fr;
-grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 /* slogan container */
@@ -71,17 +72,16 @@ grid-template-rows: auto;
   margin-top: -480px;
   margin-left: -300px;
   overflow: hidden;
-  z-index: 0;
 }
- 
+
 /* exploding ice cream image*/
 .blob-cont > img {
-    position: absolute;
-    width: 40%;
-    height: auto;
-    z-index: 3;
-    left: 20vw;
-    bottom: -5vh;
+  position: absolute;
+  width: 40%;
+  height: auto;
+  z-index: 3;
+  left: 20vw;
+  bottom: -5vh;
 }
 svg {
   background: #ffecf2;
