@@ -5,6 +5,7 @@ body {
   height: 100vh;
   max-width: 100vw;
   z-index: 0;
+  user-select: none; /* <--- this removes blinking line that appears after clicking on text */
 }
 /* title */
 .nav {
@@ -15,30 +16,32 @@ body {
 }
 h1 {
   font-family: "Tilt Neon";
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: bold;
   color: rgb(247, 247, 20);
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   background: rgba(233, 57, 128, 255);
-  margin-top: -1vh;
+  margin-top: -9vh;
 }
+
 /* images */
 #melting-img {
   position: absolute;
   width: 17.5rem;
   height: auto;
   top: -210px;
-  left: 6.5vw;
+  left: 5vw;
   z-index: 3;
 }
 #img-bowl {
   position: absolute;
   width: 22vw;
   height: auto;
-  left: -15vw;
-  bottom: 1vh;
+  left: -8vw;
+  bottom: 0vh;
   z-index: 2;
 }
+
 /* order container */
 h3 {
   font-family: "Tilt Neon";
@@ -53,8 +56,8 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100vw;
+  justify-content: center;
+  width: auto;
   height: 80vh;
 }
 #sizes-box,
@@ -68,20 +71,23 @@ h3 {
   border-radius: 15px;
   background: rgb(140, 223, 222);
   z-index: 1;
+  margin: 0 1vw 0 1vw;
 }
 #flavors-box,
 #basket-box {
   background: rgba(249, 128, 176, 255);
 }
-.catagorie {
+.catagorie,
+.orderbtn-cont {
   position: relative;
   display: flex;
   justify-content: center;
   width: auto;
 }
+/* form containers */
 label {
   font-family: "Tilt Neon";
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   padding-bottom: 10px;
 }
 
@@ -96,12 +102,126 @@ label {
   text-shadow: 1px 1px 1px black;
 }
 
-.scoops-cont {
+.scoops-cont,
+.bowl-cone-list {
   margin-left: -2vw;
+  z-index: 3;
 }
-.bowl-cone-cont {
+.alert-scoops {
+
+}
+.bowl-cone-list {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.basket-output {
+  height: 40vh;
+  width: auto;
+  border: black 2px solid;
+}
+.orderbtn {
+  width: 70%;
+  appearance: none;
+  background-color: rgb(247, 247, 20);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(192, 192, 16) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Tilt Neon";
+  font-size: 1rem;
+  padding: 0.5rem 0 1rem 0;
   margin-top: 2vh;
+  font-weight: bold;
+  outline: none;
+  quotes: auto;
+  text-decoration: none;
+  justify-content: center;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.orderbtn:hover {
+  background-color: rgb(140, 223, 222);
+  box-shadow: rgb(83, 134, 133) 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.orderbtn:active {
+  transform: scale(1.025);
+}
+
+/* media queries*/
+
+/* tablet size*/
+@media (max-width: 1300px) {
+  .container {
+    background: red;
+  }
+  h1 {
+    font-size: 90px;
+  }
+  #sizes-box,
+#flavors-box,
+#toppings-box,
+#basket-box {
+  width: 20vw;
+}
+label {
+  font-size: 2vw;
+}
+}
+
+/* phone size*/
+@media (max-width: 768px )  {
+  .container {
+    background: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+h1 {
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  #sizes-box,
+  #flavors-box,
+  #toppings-box,
+  #basket-box {
+  width: 85vw;
+  height: 15vh;
+  }
+  #melting-img {
+    display: none;
+  }
+.scoops-cont,
+.flavors-list-cont,
+.toppings-list-cont,
+.bowl-cone-list {
+  display: none;
+}
+}
+/* small phone size*/
+@media (max-width: 576px) {
+  .container {
+    background: blue;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  #sizes-box,
+  #flavors-box,
+  #toppings-box,
+  #basket-box {
+  width: 90vw;
+  height: 15vh;
+  }
 }
