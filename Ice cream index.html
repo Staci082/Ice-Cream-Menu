@@ -8,6 +8,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Ice cream style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 </head>
 <body>
@@ -70,29 +71,28 @@
                         <div class="flavors-list">
 
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="vanilla" onClick="return ValidateFlavorSelection();">
+                        <input type="checkbox" id="checkbox" name="flavor" value="vanilla">
                         <label for="vanilla">vanilla</label><br>
 
                         
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="chocolate" onClick="return ValidateFlavorSelection();">
+                        <input type="checkbox" id="checkbox" name="flavor" value="chocolate">
                         <label for="chocolate">chocolate</label><br>
 
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="strawberry" onClick="return ValidateFlavorSelection();">
+                        <input type="checkbox" id="checkbox" name="flavor" value="strawberry">
                         <label for="strawberry">strawberry</label><br>
 
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="pistachio" onClick="return ValidateFlavorSelection();">
-
+                        <input type="checkbox" id="checkbox" name="flavor" value="pistachio">
                         <label for="pistachio">pistachio</label><br>
 
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="banana" onClick="return ValidateFlavorSelection();">
+                        <input type="checkbox" id="checkbox" name="flavor" value="banana">
                         <label for="banana">banana</label><br>
 
                         <input type="number" id="input" name="quantity" min="0" max="3">
-                        <input type="checkbox" name="flavor" id="chocolate chip" onClick="return ValidateFlavorSelection();">
+                        <input type="checkbox" id="checkbox" name="flavor" value="chocolatechip">
                         <label for="chocolate chip">chocolate chip</label><br>
                         
                         </div>
@@ -150,6 +150,5 @@
                 </div>
             
         </div>
-        <script src="jquery-3.6.3.min.js"></script>
         <script src="Ice cream yeehaw.js"></script>
 </html>

@@ -1,10 +1,3 @@
-// radio buttons //
-$(document).ready(function(){
-
-
-document.querySelector('input[name="scoopbtn"]:checked') 
-
-document.querySelector('input[name="bowl-conebtn"]:checked') 
 
 $(document).ready(function(){
     $(".resetbtn").click(function(){
@@ -14,13 +7,13 @@ $(document).ready(function(){
 
 $('#checkbox').click(function () {
     if (this.checked) {
-      $('#input').hide();
-    } else {
       $('#input').show();
+    } else {
+      $('#input').hide();
     }
   })
 
-function ValidateFlavorSelection()  {  
+/* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
       var numberOfCheckedItems = 0;  
       for(var i = 0; i < checkboxes.length; i++)  
@@ -34,8 +27,9 @@ function ValidateFlavorSelection()  {
           return false;  
       }  
   }  
+  ValidateFlavorSelection()
 
   $("#catagorie-btn").click(function(){
     $("#choice-cont").slideToggle("slow");
-  });
-})
+  }); */
+
