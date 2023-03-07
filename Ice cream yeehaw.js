@@ -1,3 +1,4 @@
+/* reset button */
 
 $(document).ready(function(){
     $(".resetbtn").click(function(){
@@ -5,13 +6,53 @@ $(document).ready(function(){
     });
 });
 
-$('#checkbox').click(function () {
+
+/* quantity buttons */
+
+$('#checkbox1').click(function () {
     if (this.checked) {
-      $('#input').show();
+      $('#input1').show();  /* shows quantity button apon checking*/
     } else {
-      $('#input').hide();
+      $('#input1').hide();  /* hides quantity button apon unchecking*/
     }
   })
+
+  $('#checkbox2').click(function () {
+    if (this.checked) {
+      $('#input2').show();
+    } else {
+      $('#input2').hide();
+    }
+  })
+  $('#checkbox3').click(function () {
+    if (this.checked) {
+      $('#input3').show();
+    } else {
+      $('#input3').hide();
+    }
+  })
+  $('#checkbox4').click(function () {
+    if (this.checked) {
+      $('#input4').show();
+    } else {
+      $('#input4').hide();
+    }
+  })
+  $('#checkbox5').click(function () {
+    if (this.checked) {
+      $('#input5').show();
+    } else {
+      $('#input5').hide();
+    }
+  })
+  $('#checkbox6').click(function () {
+    if (this.checked) {
+      $('#input6').show();
+    } else {
+      $('#input6').hide();
+    }
+  })
+
 
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
