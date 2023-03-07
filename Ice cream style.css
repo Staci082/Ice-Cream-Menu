@@ -114,15 +114,22 @@ label {
 .basket-output {
   height: 40vh;
   width: auto;
-  border: black 2px solid;
   font-family: "Tilt Neon";
   font-size: 1.5vw;
   padding-bottom: 10px;
   color: rgba(255, 250, 251, 255);
   text-shadow: 1px 1px 1px black;
 }
-.orderbtn { 
-  width:clamp(6rem, 8rem, 11rem);
+.orderbtn-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.orderbtn,
+.resetbtn {
+  width: 7rem;
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
@@ -134,8 +141,9 @@ label {
   display: inline-block;
   font-family: "Tilt Neon";
   font-size: 1rem;
-  padding: 0.5rem 0 1rem 0;
-  margin-top: 2vh;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-weight: bold;
   outline: none;
   quotes: auto;
@@ -147,13 +155,15 @@ label {
   touch-action: manipulation;
 }
 
-.orderbtn:hover {
+.orderbtn:hover,
+.resetbtn:hover {
   background-color: rgb(140, 223, 222);
   box-shadow: rgb(83, 134, 133) 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
-.orderbtn:active {
+.orderbtn:active,
+.resetbtn:active {
   transform: scale(1.025);
 }
 
@@ -161,54 +171,59 @@ label {
 
 /* tablet size*/
 @media (max-width: 1300px) {
-
   h1 {
     font-size: 90px;
-  }
-  #sizes-box,
-#flavors-box,
-#toppings-box,
-#basket-box {
-  width: 20vw;
-}
-label {
-  font-size: 2vw;
-}
-}
-
-/* phone size*/
-@media (max-width: 800px )  {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-h1 {
-    font-size: 70px;
-  }
-  h3 {
-    font-size: 8vw;
   }
   #sizes-box,
   #flavors-box,
   #toppings-box,
   #basket-box {
-  width: 85vw;
-  height: auto;
+    width: 20vw;
   }
-  .orderbtn {
+  label {
+    font-size: 2vw;
+  }
+}
+
+/* phone size*/
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  h1 {
+    padding-top: 30px;
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  label {
+    font-size: 2rem;
+  }
+  #sizes-box,
+  #flavors-box,
+  #toppings-box,
+  #basket-box {
+    width: 85vw;
+    height: auto;
+  }
+  .orderbtn,
+  .resetbtn {
     margin-bottom: 10px;
   }
-  #melting-img {
+  #melting-img,
+  #img-bowl {
     display: none;
   }
 
-#sizesCont,
-#bowlConeCont,
-#flavorsCont,
-#toppingsCont,
-#basketCont {
-  display: none;
-}
-
+  #sizesCont,
+  #bowlConeCont,
+  #flavorsCont,
+  #toppingsCont,
+  #basketCont {
+    display: none;
+    padding-bottom: 30px;
+  }
 }

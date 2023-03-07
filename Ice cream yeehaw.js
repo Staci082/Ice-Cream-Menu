@@ -1,7 +1,7 @@
 /* reset button */
 
 $(document).ready(function(){
-    $(".resetbtn").click(function(){
+    $("#resetBtn").click(function(){
         location.reload(true);
     });
 });
