@@ -11,9 +11,9 @@ $(document).ready(function(){
 
 $('#checkbox1').click(function () {
     if (this.checked) {
-      $('#input1').show();  /* shows quantity button apon checking*/
+      $('#input1').show();  /* shows quantity button upon checking*/
     } else {
-      $('#input1').hide();  /* hides quantity button apon unchecking*/
+      $('#input1').hide();  /* hides quantity button upon unchecking*/
     }
   })
 

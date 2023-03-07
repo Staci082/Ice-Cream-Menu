@@ -37,7 +37,7 @@ h1 {
   position: absolute;
   width: 22vw;
   height: auto;
-  left: -8vw;
+  left: -10vw;
   bottom: 0vh;
   z-index: 2;
 }
@@ -65,6 +65,7 @@ h3 {
 #toppings-box,
 #basket-box {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 16vw;
   height: 60vh;
@@ -92,11 +93,11 @@ label {
   color: rgba(255, 250, 251, 255);
   text-shadow: 1px 1px 1px black;
 }
-
-
-.scoops-cont,
-.bowl-cone-list {
+.scoops-list {
   margin-left: -2vw;
+}
+.bowl-cone-list {
+  margin-left: 2vw;
   z-index: 3;
 }
 .bowl-cone-cont {
@@ -105,6 +106,7 @@ label {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .quantity {
   display: none;
 }
@@ -113,9 +115,14 @@ label {
   height: 40vh;
   width: auto;
   border: black 2px solid;
+  font-family: "Tilt Neon";
+  font-size: 1.5vw;
+  padding-bottom: 10px;
+  color: rgba(255, 250, 251, 255);
+  text-shadow: 1px 1px 1px black;
 }
 .orderbtn { 
-  width: 70%;
+  width:clamp(6rem, 8rem, 11rem);
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
