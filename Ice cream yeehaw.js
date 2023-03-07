@@ -1,19 +1,12 @@
-/* reset button */
-
-$(document).ready(function(){
-    $("#resetBtn").click(function(){
-        location.reload(true);
-    });
-});
 
 
-/* quantity buttons */
+/* quantity flavor buttons */
 
 $('#checkbox1').click(function () {
     if (this.checked) {
-      $('#input1').show();  /* shows quantity button upon checking*/
+      $('#input1').show();  /* shows quantity button upon checking box*/
     } else {
-      $('#input1').hide();  /* hides quantity button upon unchecking*/
+      $('#input1').hide();  /* hides quantity button upon unchecking box*/
     }
   })
 
@@ -56,6 +49,7 @@ $('#checkbox1').click(function () {
 
 /* catagory slide down effect on mobile */
 
+
   $("#sizesBtn").click(function(){
     $("#sizesCont").slideToggle("slow");
   }); 
@@ -68,6 +62,15 @@ $('#checkbox1').click(function () {
   $("#basketBtn").click(function(){
     $("#basketCont").slideToggle("slow");
   }); 
+
+
+  /* reset button */
+
+$(document).ready(function(){
+    $("#resetBtn").click(function(){
+        location.reload(true);
+    });
+});
 
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
@@ -84,8 +87,5 @@ $('#checkbox1').click(function () {
       }  
   }  
   ValidateFlavorSelection()
-
-  $("#catagorie-btn").click(function(){
-    $("#choice-cont").slideToggle("slow");
-  }); */
+ */
 
