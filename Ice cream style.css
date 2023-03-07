@@ -22,6 +22,7 @@ h1 {
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   background: rgba(233, 57, 128, 255);
   margin-top: -9vh;
+  padding-top: 30px;
 }
 
 /* images */
@@ -129,7 +130,7 @@ label {
 
 .orderbtn,
 .resetbtn {
-  width: 7rem;
+  width: 6vw;
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
@@ -193,7 +194,6 @@ label {
     justify-content: flex-start;
   }
   h1 {
-    padding-top: 30px;
     font-size: 70px;
   }
   h3 {
@@ -212,6 +212,7 @@ label {
   .orderbtn,
   .resetbtn {
     margin-bottom: 10px;
+    width: 20vw;
   }
   #melting-img,
   #img-bowl {
