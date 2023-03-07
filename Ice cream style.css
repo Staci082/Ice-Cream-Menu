@@ -22,7 +22,7 @@ h1 {
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   background: rgba(233, 57, 128, 255);
   margin-top: -9vh;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 /* images */
@@ -193,6 +193,7 @@ label {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   h1 {
     font-size: 70px;
   }

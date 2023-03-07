@@ -51,16 +51,16 @@ $('#checkbox1').click(function () {
 
 
   $("#sizesBtn").click(function(){
-    $("#sizesCont").slideToggle("slow");
+    $("#sizesCont").slideToggle("fast");
   }); 
   $("#flavorsBtn").click(function(){
-    $("#flavorsCont").slideToggle("slow");
+    $("#flavorsCont").slideToggle("fast");
   }); 
   $("#toppingsBtn").click(function(){
-    $("#toppingsCont").slideToggle("slow");
+    $("#toppingsCont").slideToggle("fast");
   }); 
   $("#basketBtn").click(function(){
-    $("#basketCont").slideToggle("slow");
+    $("#basketCont").slideToggle("fast");
   }); 
 
 
