@@ -11,4 +11,31 @@ $(document).ready(function(){
         location.reload(true);
     });
 });
+
+$('#checkbox').click(function () {
+    if (this.checked) {
+      $('#input').hide();
+    } else {
+      $('#input').show();
+    }
+  })
+
+function ValidateFlavorSelection()  {  
+      var checkboxes = document.getElementsByName("flavor");  
+      var numberOfCheckedItems = 0;  
+      for(var i = 0; i < checkboxes.length; i++)  
+      {  
+          if(checkboxes[i].checked)  
+              numberOfCheckedItems++;  
+      }  
+      if(numberOfCheckedItems > 3)  
+      {  
+          alert("You can't select more than three flavors!");  
+          return false;  
+      }  
+  }  
+
+  $("#catagorie-btn").click(function(){
+    $("#choice-cont").slideToggle("1000");
+  });
 })

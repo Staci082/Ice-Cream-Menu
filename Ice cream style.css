@@ -91,10 +91,7 @@ label {
   padding-bottom: 10px;
 }
 
-.scoops-cont,
-.flavors-list-cont,
-.toppings-list-cont,
-.bowl-cone-list {
+#choice-cont {
   display: flex;
   align-items: space-between;
   justify-content: center;
@@ -106,9 +103,6 @@ label {
 .bowl-cone-list {
   margin-left: -2vw;
   z-index: 3;
-}
-.alert-scoops {
-
 }
 .bowl-cone-list {
   position: relative;
@@ -190,38 +184,24 @@ h1 {
     font-size: 70px;
   }
   h3 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   #sizes-box,
   #flavors-box,
   #toppings-box,
   #basket-box {
   width: 85vw;
-  height: 15vh;
+  height: auto;
+  }
+  .orderbtn {
+    margin-bottom: 10px;
   }
   #melting-img {
     display: none;
   }
-.scoops-cont,
-.flavors-list-cont,
-.toppings-list-cont,
-.bowl-cone-list {
+
+#choice-cont {
   display: none;
 }
-}
-/* small phone size*/
-@media (max-width: 576px) {
-  .container {
-    background: blue;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  #sizes-box,
-  #flavors-box,
-  #toppings-box,
-  #basket-box {
-  width: 90vw;
-  height: 15vh;
-  }
+
 }
