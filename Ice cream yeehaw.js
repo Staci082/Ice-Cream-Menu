@@ -36,6 +36,6 @@ function ValidateFlavorSelection()  {
   }  
 
   $("#catagorie-btn").click(function(){
-    $("#choice-cont").slideToggle("1000");
+    $("#choice-cont").slideToggle("slow");
   });
 })

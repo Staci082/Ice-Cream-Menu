@@ -104,12 +104,13 @@ label {
   margin-left: -2vw;
   z-index: 3;
 }
-.bowl-cone-list {
+.bowl-cone-cont {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .basket-output {
   height: 40vh;
   width: auto;
