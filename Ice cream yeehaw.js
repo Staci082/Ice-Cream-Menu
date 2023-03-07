@@ -54,6 +54,21 @@ $('#checkbox1').click(function () {
   })
 
 
+/* catagory slide down effect on mobile */
+
+  $("#sizesBtn").click(function(){
+    $("#sizesCont").slideToggle("slow");
+  }); 
+  $("#flavorsBtn").click(function(){
+    $("#flavorsCont").slideToggle("slow");
+  }); 
+  $("#toppingsBtn").click(function(){
+    $("#toppingsCont").slideToggle("slow");
+  }); 
+  $("#basketBtn").click(function(){
+    $("#basketCont").slideToggle("slow");
+  }); 
+
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
       var numberOfCheckedItems = 0;  

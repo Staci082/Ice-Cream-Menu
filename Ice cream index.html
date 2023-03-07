@@ -22,11 +22,11 @@
                 <div class="col-sm-3" id="sizes-box">
 <!--size box-->
                     <div class="catagorie">
-                        <h3 type="button" id="catagorie-btn">sizes</h3>
+                        <h3 type="button" id="sizesBtn">sizes</h3>
                     </div>
 
                     <!-- this id is for the mobile version menu dropdown-->
-                    <div class="scoops-cont"  id="choice-cont">
+                    <div class="scoops-cont"  id="sizesCont">
                         <ul class="scoops-list" style="list-style: none">
                             <li>
                                 <input type="radio" name="scoopbtn" id="scoop1" value="1scoop"/>
@@ -45,7 +45,7 @@
                         <img id="img-bowl" src="Images/bowl.png" />
                     </div>
 <!--bowl-cone-list-->
-                    <div class="bowl-cone-cont"  id="choice-cont">
+                    <div class="bowl-cone-cont" id="bowlConeCont">
                         <ul class="bowl-cone-list" style="list-style: none">
                             <li>
                                 <input type="radio" name="bowl-conebtn" id="bowl" />
@@ -64,13 +64,12 @@
 
                 <div class="col-sm-3" id="flavors-box">
                     <div class="catagorie">
-                        <h3 type="button" id="catagorie-btn">flavors</h3>
+                        <h3 type="button" id="flavorsBtn">flavors</h3>
                     </div>
 
-                    <form class="flavors-list-cont" id="choice-cont">
-                        <div class="flavors-list">
+                    <form class="flavors-list-cont" id="flavorsCont">
 
-                        <input type="number" id="input1" class="quantity" min="0" max="3">
+                        <input type="number" id="input1" class="quantity" min="0" max="3"> 
                         <input type="checkbox" id="checkbox1" name="flavor" value="vanilla">
                         <label for="vanilla">vanilla</label><br>
 
@@ -94,20 +93,17 @@
                         <input type="number" id="input6" class="quantity" min="0" max="3">
                         <input type="checkbox" id="checkbox6" name="flavor" value="chocolatechip">
                         <label for="chocolate chip">chocolate chip</label><br>
-                        
-                        </div>
+
                     </form>
                 </div>
 <!--Toppings box-->
                 <div class="col-sm-3" id="toppings-box">
                     <div class="catagorie">
-                        <h3 type="button" id="catagorie-btn">toppings</h3>
+                        <h3 type="button" id="toppingsBtn">toppings</h3>
                     </div>
                     
-                    <div class="toppings-list-cont" id="choice-cont">
-                    <div class="toppings-list">
-
-                        
+                    <form class="toppings-list-cont" id="toppingsCont">
+                      
                         <input type="checkbox" name="topping" id="whipped cream">
                         <label for="whipped cream">whipped cream</label><br>
                   
@@ -124,31 +120,28 @@
                         <input  type="checkbox" name="topping" id="m&m's">
                         <label for="m&m's">m&m's</label><br>
 
-                        <input  type="checkbox" name="topping" id="marshmellows">
-                        <label for="marshmellows">marshmellows</label><br>
 
                         <input  type="checkbox" name="topping" id="notoppings">
                         <label for="notoppings">none</label><br>
 
-                    </div>
-                  </div>
+                  </form>
 
                 </div>  
 <!--Basket box-->  
                 <div class="col-sm-3" id="basket-box">
                     <div class="catagorie">
                         <img id="melting-img" src="./Images/melted.png"/>
-                        <h3 type="button" id="catagorie-btn">basket</h3>
+                        <h3 type="button" id="basketBtn">basket</h3>
                     </div>
 
-                    <div class="basket-output" id="choice-cont">
+                    <div class="basket-output" id="basketCont">
                     </div>
 
                     <div class="orderbtn-cont">
-                        <input class="orderbtn" type=button value='complete order'>
+                        <input class="orderbtn" id="orderBtn" type=button value='complete order'>
                     </div>
                 </div>
-            
+                
         </div>
         <script src="Ice cream yeehaw.js"></script>
 </html>
