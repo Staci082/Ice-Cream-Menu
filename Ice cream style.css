@@ -74,6 +74,7 @@ h3 {
   background: rgb(140, 223, 222);
   z-index: 1;
   margin: 0 1vw 0 1vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
 }
 #flavors-box,
 #basket-box {
@@ -167,6 +168,7 @@ label {
 .resetbtn:active {
   transform: scale(1.025);
 }
+
 
 /* media queries*/
 

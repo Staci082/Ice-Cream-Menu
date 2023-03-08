@@ -72,6 +72,7 @@ $(document).ready(function(){
     });
 });
 
+
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
       var numberOfCheckedItems = 0;  
