@@ -71,7 +71,15 @@ $(document).ready(function(){
         location.reload(true);
     });
 });
-
+function myFunction() {
+  var checkBox = document.getElementById("checkbox1");
+  var basketText = document.getElementById("vanillaOutput");
+  if (checkBox.checked == true){
+    basketText.style.display = "block";
+  } else {
+     basketText.style.display = "none";
+  }
+}
 
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  

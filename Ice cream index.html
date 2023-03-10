@@ -69,28 +69,28 @@
                     <form class="flavors-list-cont" id="flavorsCont">
 
                         <input type="number" id="input1" class="quantity" min="0" max="3"> 
-                        <input type="checkbox" id="checkbox1" name="flavor" value="vanilla">
-                        <label for="vanilla">vanilla</label><br>
+                        <input type="checkbox" id="checkbox1" name="flavor" value="vanilla" onclick="myFunction()">
+                        <label for="vanilla" >vanilla</label><br>
 
                         
                         <input type="number" id="input2" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox2" name="flavor" value="chocolate">
+                        <input type="checkbox" id="checkbox2" name="flavor" value="chocolate" onclick="myFunction()">
                         <label for="chocolate">chocolate</label><br>
 
                         <input type="number" id="input3" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox3" name="flavor" value="strawberry">
+                        <input type="checkbox" id="checkbox3" name="flavor" value="strawberry" onclick="myFunction()">
                         <label for="strawberry">strawberry</label><br>
 
                         <input type="number" id="input4" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox4" name="flavor" value="pistachio">
+                        <input type="checkbox" id="checkbox4" name="flavor" value="pistachio" onclick="myFunction()">
                         <label for="pistachio">pistachio</label><br>
 
                         <input type="number" id="input5" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox5" name="flavor" value="banana">
+                        <input type="checkbox" id="checkbox5" name="flavor" value="banana" onclick="myFunction()">
                         <label for="banana">banana</label><br>
 
                         <input type="number" id="input6" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox6" name="flavor" value="chocolatechip">
+                        <input type="checkbox" id="checkbox6" name="flavor" value="chocolatechip" onclick="myFunction()">
                         <label for="chocolate chip">chocolate chip</label><br>
 
                     </form>
@@ -136,6 +136,14 @@
                     <div id="basketCont">
 
                     <div class="basket-output" id="basketOutput">
+
+                        <p id="vanillaOutput" style="display:none">vanilla</p>
+                        <p id="chocolateOutput" style="display:none">chocolate</p>
+                        <p id="strawberryOutput" style="display:none">strawberry</p>
+                        <p id="pistachioOutput" style="display:none">pistachio</p>
+                        <p id="bananaOutput" style="display:none">banana</p>
+                        <p id="chocolatechipOutput" style="display:none">chocolate chip</p>
+
                     </div>
                     
                     <div class="orderbtn-cont">

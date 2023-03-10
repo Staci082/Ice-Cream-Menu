@@ -88,7 +88,8 @@ h3 {
   width: auto;
 }
 /* form containers */
-label {
+label, p
+{
   font-family: "Tilt Neon";
   font-size: 1.5vw;
   padding-bottom: 10px;
