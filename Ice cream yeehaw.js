@@ -1,4 +1,21 @@
-/* quantity flavor buttons */
+// bowl & cone buttons
+
+/*$("#bowl").click(function () {
+  if (this.checked) {
+    $("#bowlOutput").show();
+  } else {
+    $("#bowlOutput").hide();
+  }
+});
+$("#cone").click(function () {
+  if (this.checked) {
+    $("#coneOutput").show();
+  } else {
+    $("#coneOutput").hide();
+  }
+});
+
+/* flavor buttons */
 
 $("#checkbox1").click(function () {
   if (this.checked) {
@@ -9,7 +26,6 @@ $("#checkbox1").click(function () {
     $("#vanillaOutput").hide();
   }
 });
-
 $("#checkbox2").click(function () {
   if (this.checked) {
     $("#input2").show();
@@ -55,6 +71,10 @@ $("#checkbox6").click(function () {
     $("#chocolateChipOutput").hide();
   }
 });
+
+// topping buttons
+
+
 
 /* catagory slide down effect on mobile */
 

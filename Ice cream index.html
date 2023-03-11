@@ -47,12 +47,12 @@
                     <div class="bowl-cone-cont" id="bowlConeCont">
                         <ul class="bowl-cone-list" style="list-style: none">
                             <li>
-                                <input type="radio" name="bowl-conebtn" id="bowl" onclick="contOutput1()"/>
+                                <input type="radio" name="bowl-conebtn" id="bowl" />
                                 <label for="a-opt" class="label">bowl</label>
                             </li>
                             
                             <li class="list-item">
-                                <input type="radio" name="bowl-conebtn" id="cone" onclick="contOutput2()"/>
+                                <input type="radio" name="bowl-conebtn" id="cone" />
                                 <label for="b-opt"class="label">cone</label>
                             </li>
                         </ul>
@@ -103,24 +103,24 @@
                     
                     <form class="toppings-list-cont" id="toppingsCont">
                       
-                        <input type="checkbox" name="topping" id="whipped cream">
+                        <input type="checkbox" name="topping">
                         <label for="whipped cream">whipped cream</label><br>
                   
-                        <input type="checkbox" name="topping" id="sprinkles">
+                        <input type="checkbox" name="topping">
                         <label for="sprinkles">sprinkles</label><br>
                        
 
-                        <input type="checkbox" name="topping" id="chocolate sauce">
+                        <input type="checkbox" name="topping">
                           <label for="chocolate sauce">chocolate sauce</label><br>
 
-                        <input type="checkbox" name="topping" id="caramel sauce">
+                        <input type="checkbox" name="topping">
                         <label for="caramel sauce">caramel sauce</label><br>
 
-                        <input  type="checkbox" name="topping" id="m&m's">
+                        <input  type="checkbox" name="topping">
                         <label for="m&m's">m&m's</label><br>
 
 
-                        <input  type="checkbox" name="topping" id="notoppings">
+                        <input  type="checkbox" name="topping">
                         <label for="notoppings">none</label><br>
 
                   </form>
@@ -136,6 +136,10 @@
                     <div id="basketCont">
 
                     <div class="basket-output" id="basketOutput">
+
+                        <p id="bowlOutput" style="display:none"></p>
+                        <p id="coneOutput" style="display:none">cone</p>
+                        <br>
 
                         <p id="bowlOutput" style="display:none">bowl</p>
                         <p id="coneOutput" style="display:none">cone</p>
