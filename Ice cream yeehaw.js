@@ -74,13 +74,46 @@ $("#flavor6").click(function () {
 
 // topping buttons
 
-$("#flavor5").click(function () {
+$("#topping1").click(function () {
   if (this.checked) {
-    $("#input5").show();
-    $("#flavorOutput5").show();
+    $("#toppingOutput1").show();
   } else {
-    $("#input5").hide();
-    $("#flavorOutput5").hide();
+    $("#toppingOutput1").hide();
+  }
+});
+$("#topping2").click(function () {
+  if (this.checked) {
+    $("#toppingOutput2").show();
+  } else {
+    $("#toppingOutput2").hide();
+  }
+});
+$("#topping3").click(function () {
+  if (this.checked) {
+    $("#toppingOutput3").show();
+  } else {
+    $("#toppingOutput3").hide();
+  }
+});
+$("#topping4").click(function () {
+  if (this.checked) {
+    $("#toppingOutput4").show();
+  } else {
+    $("#toppingOutput4").hide();
+  }
+});
+$("#topping5").click(function () {
+  if (this.checked) {
+    $("#toppingOutput5").show();
+  } else {
+    $("#toppingOutput5").hide();
+  }
+});
+$("#topping6").click(function () {
+  if (this.checked) {
+    $("#toppingOutput6").show();
+  } else {
+    $("#toppingOutput6").hide();
   }
 });
 
