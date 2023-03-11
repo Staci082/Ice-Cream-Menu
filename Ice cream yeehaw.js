@@ -17,64 +17,72 @@ $("#cone").click(function () {
 
 /* flavor buttons */
 
-$("#checkbox1").click(function () {
+$("#flavor1").click(function () {
   if (this.checked) {
     $("#input1").show(); /* shows quantity button upon checking box*/
-    $("#vanillaOutput").show();
+    $("#flavorOutput1").show();
   } else {
     $("#input1").hide(); /* hides quantity button upon unchecking box*/
-    $("#vanillaOutput").hide();
+    $("#flavorOutput1").hide();
   }
 });
-$("#checkbox2").click(function () {
+$("#flavor2").click(function () {
   if (this.checked) {
     $("#input2").show();
-    $("#chocolateOutput").show();
+    $("#flavorOutput2").show();
   } else {
     $("#input2").hide();
-    $("#chocolateOutput").hide();
+    $("#flavorOutput2").hide();
   }
 });
-$("#checkbox3").click(function () {
+$("#flavor3").click(function () {
   if (this.checked) {
     $("#input3").show();
-    $("#strawberryOutput").show();
+    $("#flavorOutput3").show();
   } else {
     $("#input3").hide();
-    $("#strawberryOutput").hide();
+    $("#flavorOutput3").hide();
   }
 });
-$("#checkbox4").click(function () {
+$("#flavor4").click(function () {
   if (this.checked) {
     $("#input4").show();
-    $("#pistachioOutput").show();
+    $("#flavorOutput4").show();
   } else {
     $("#input4").hide();
-    $("#pistachioOutput").hide();
+    $("#flavorOutput4").hide();
   }
 });
-$("#checkbox5").click(function () {
+$("#flavor5").click(function () {
   if (this.checked) {
     $("#input5").show();
-    $("#bananaOutput").show();
+    $("#flavorOutput5").show();
   } else {
     $("#input5").hide();
-    $("#bananaOutput").hide();
+    $("#flavorOutput5").hide();
   }
 });
-$("#checkbox6").click(function () {
+$("#flavor6").click(function () {
   if (this.checked) {
     $("#input6").show();
-    $("#chocolateChipOutput").show();
+    $("#flavorOutput6").show();
   } else {
     $("#input6").hide();
-    $("#chocolateChipOutput").hide();
+    $("#flavorOutput6").hide();
   }
 });
 
 // topping buttons
 
-
+$("#flavor5").click(function () {
+  if (this.checked) {
+    $("#input5").show();
+    $("#flavorOutput5").show();
+  } else {
+    $("#input5").hide();
+    $("#flavorOutput5").hide();
+  }
+});
 
 /* catagory slide down effect on mobile */
 
@@ -101,8 +109,8 @@ $(document).ready(function () {
 
 // working for one id at a time
 /*function flavorOutput1() {
-  var checkBox = document.getElementById("checkbox1");
-  var basketText = document.getElementById("vanillaOutput");
+  var checkBox = document.getElementById("flavor1");
+  var basketText = document.getElementById("flavorOutput1");
   if (checkBox.checked == true) {
     basketText.style.display = "block";
   } else {
@@ -110,7 +118,7 @@ $(document).ready(function () {
   }
 }
 
-//const flavorsList = document.querySelectorAll("#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5, #checkbox6");
+//const flavorsList = document.querySelectorAll("#flavor1, #flavor2, #flavor3, #flavor4, #flavor5, #flavor6");
 
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  
