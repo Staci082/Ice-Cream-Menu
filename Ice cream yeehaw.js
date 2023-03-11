@@ -1,3 +1,4 @@
+
 // bowl & cone buttons
 
 $('.bowlConeList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
@@ -22,6 +23,7 @@ $("#cone").click(function () {
     $("#coneOutput").hide();
   }
 });
+
 
 /* flavor buttons */
 
@@ -80,11 +82,14 @@ $("#flavor6").click(function () {
   }
 });
 
+
 // topping buttons
 
 $("#topping1").click(function () {
   if (this.checked) {
     $("#toppingOutput1").show();
+    $("#toppingOutput6").hide();
+    $( "#topping6" ).prop( "checked", false );
   } else {
     $("#toppingOutput1").hide();
   }
@@ -92,6 +97,8 @@ $("#topping1").click(function () {
 $("#topping2").click(function () {
   if (this.checked) {
     $("#toppingOutput2").show();
+    $("#toppingOutput6").hide();
+    $( "#topping6" ).prop( "checked", false );
   } else {
     $("#toppingOutput2").hide();
   }
@@ -99,6 +106,8 @@ $("#topping2").click(function () {
 $("#topping3").click(function () {
   if (this.checked) {
     $("#toppingOutput3").show();
+    $("#toppingOutput6").hide();
+    $( "#topping6" ).prop( "checked", false );
   } else {
     $("#toppingOutput3").hide();
   }
@@ -106,6 +115,8 @@ $("#topping3").click(function () {
 $("#topping4").click(function () {
   if (this.checked) {
     $("#toppingOutput4").show();
+    $("#toppingOutput6").hide();
+    $( "#topping6" ).prop( "checked", false );
   } else {
     $("#toppingOutput4").hide();
   }
@@ -113,6 +124,8 @@ $("#topping4").click(function () {
 $("#topping5").click(function () {
   if (this.checked) {
     $("#toppingOutput5").show();
+    $("#toppingOutput6").hide();
+    $( "#topping6" ).prop( "checked", false );
   } else {
     $("#toppingOutput5").hide();
   }
@@ -121,12 +134,13 @@ $("#topping6").click(function () {  // no toppings
   if (this.checked) {
     $("#toppingOutput6").show();
     //removing other toppings when none is checked
-    $("p").remove("#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5");
+    $("#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5").hide();
     $( "#topping1, #topping2, #topping3, #topping4, #topping5" ).prop( "checked", false );
   } else {
     $("#toppingOutput6").hide();
   }
 });
+
 
 // prices
 
@@ -164,6 +178,7 @@ $("#scoop3").click(function () {
   }
 });
 
+
 /* catagory slide down effect on mobile */
 
 $("#sizesBtn").click(function () {
@@ -179,67 +194,69 @@ $("#basketBtn").click(function () {
   $("#basketCont").slideToggle("fast");
 });
 
+
 //delete buttons
 
 //flavors
+
   $("#deleteF1").click(function(){
-    $("p").remove("#flavorOutput1");
+    $("#flavorOutput1").hide();
     $( "#flavor1" ).prop( "checked", false );
     $("#input1").hide();
   });
   $("#deleteF2").click(function(){
-    $("p").remove("#flavorOutput2");
+    $("#flavorOutput2").hide();
     $( "#flavor2" ).prop( "checked", false );
     $("#input2").hide();
   });
   $("#deleteF3").click(function(){
-    $("p").remove("#flavorOutput3");
+    $("#flavorOutput3").hide();
     $( "#flavor3" ).prop( "checked", false );
     $("#input3").hide();
   });
   $("#deleteF4").click(function(){
-    $("p").remove("#flavorOutput4");
+    $("#flavorOutput4").hide();
     $( "#flavor4" ).prop( "checked", false );
     $("#input4").hide();
   });
   $("#deleteF5").click(function(){
-    $("p").remove("#flavorOutput5");
+    $("#flavorOutput5").hide();
     $( "#flavor5" ).prop( "checked", false );
     $("#input5").hide();
   });
   $("#deleteF6").click(function(){
-    $("p").remove("#flavorOutput6");
+    $("#flavorOutput6").hide();
     $( "#flavor6" ).prop( "checked", false );
     $("#input6").hide();
   });
 
 
 //toppings
+
   $("#deleteT1").click(function(){
-    $("p").remove("#toppingOutput1");
+    $("#toppingOutput1").hide();
     $( "#topping1" ).prop( "checked", false );
   });
   $("#deleteT2").click(function(){
-    $("p").remove("#toppingOutput2");
+    $("#toppingOutput2").hide();
     $( "#topping2" ).prop( "checked", false );
   });
   $("#deleteT3").click(function(){
-    $("p").remove("#toppingOutput3");
+    $("#toppingOutput3").hide();
     $( "#topping3" ).prop( "checked", false );
   });
   $("#deleteT4").click(function(){
-    $("p").remove("#toppingOutput4");
+    $("#toppingOutput4").hide();
     $( "#topping4" ).prop( "checked", false );
   });
   $("#deleteT5").click(function(){
-    $("p").remove("#toppingOutput5");
+    $("#toppingOutput5").hide();
     $( "#topping5" ).prop( "checked", false );
   });
   $("#deleteT6").click(function(){
-    $("p").remove("#toppingOutput6");
+    $("#toppingOutput6").hide();
     $( "#topping6" ).prop( "checked", false );
   });
-
 
 
 /* reset button */
@@ -249,19 +266,6 @@ $("#basketBtn").click(function () {
   });
 
 
-
-// working for one id at a time
-/*function flavorOutput1() {
-  var checkBox = document.getElementById("flavor1");
-  var basketText = document.getElementById("flavorOutput1");
-  if (checkBox.checked == true) {
-    basketText.style.display = "block";
-  } else {
-    basketText.style.display = "none";
-  }
-}
-
-//const flavorsList = document.querySelectorAll("#flavor1, #flavor2, #flavor3, #flavor4, #flavor5, #flavor6");
 
 /* function ValidateFlavorSelection()  {  
       var checkboxes = document.getElementsByName("flavor");  

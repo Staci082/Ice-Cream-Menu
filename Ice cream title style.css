@@ -1,7 +1,7 @@
 body {
   height: 100%;
   background: #ffecf2;
-  user-select: none; /* <--- this removes blinking line that appears after clicking on text */
+  user-select: none; /* <--- this hides blinking line that appears after clicking on text */
 }
 
 /* navigation bar */
