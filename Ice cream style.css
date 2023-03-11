@@ -117,25 +117,29 @@ p {
 .quantity {
   display: none;
 }
-
 .basket-output {
   height: 40vh;
   width: auto;
   font-family: "Tilt Neon";
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding-bottom: 10px;
   color: rgba(255, 250, 251, 255);
   text-shadow: 1px 1px 1px black;
+}
+#delete {
+  height: 2.5vh;
+  margin-right: 20px;
 }
 .orderbtn-cont {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 3vh;
 }
 .orderbtn,
 .resetbtn {
-  width: 6vw;
+  width: 6.5vw;
   appearance: none;
   background-color: rgb(247, 247, 20);
   border-radius: 40em;
@@ -204,23 +208,25 @@ p {
     font-size: 70px;
   }
   h3 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   label,
   p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   #sizes-box,
   #flavors-box,
   #toppings-box,
   #basket-box {
-    width: 85vw;
+    width: 100vw;
     height: auto;
   }
   .orderbtn,
   .resetbtn {
     margin-bottom: 10px;
-    width: 20vw;
+    width: 40vw;
+    height: 10vh;
+    font-size: 3rem;
   }
   #melting-img,
   #img-bowl {
@@ -235,4 +241,5 @@ p {
     display: none;
     padding-bottom: 30px;
   }
+
 }

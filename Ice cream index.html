@@ -28,16 +28,16 @@
                     <div class="scoops-cont"  id="sizesCont">
                         <ul class="scoops-list" style="list-style: none">
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop1" value="1scoop"/>
+                                <input type="radio" name="scoopbtn" id="scoop1" />
                                 <label for="a-opt" class="label">1 scoop................1€</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop2" value="2scoop"/>
+                                <input type="radio" name="scoopbtn" id="scoop2" />
                                 <label for="b-opt"class="label">2 scoops.............2€</label>
                             </li>
                             <li>
-                                <input type="radio" name="scoopbtn" id="scoop3" value="3scoop"/>
+                                <input type="radio" name="scoopbtn" id="scoop3"/>
                                 <label for="c-opt" class="label">3 scoops.............3€</label>
                             </li>
                         </ul>
@@ -51,7 +51,7 @@
                                 <label for="a-opt" class="label">bowl</label>
                             </li>
                             
-                            <li class="list-item">
+                            <li>
                                 <input type="radio" name="bowl-conebtn" id="cone" />
                                 <label for="b-opt"class="label">cone</label>
                             </li>
@@ -69,7 +69,7 @@
                     <form class="flavors-list-cont" id="flavorsCont">
 
                         <input type="number" id="input1" class="quantity" min="0" max="3"> 
-                        <input type="checkbox" id="flavor1">
+                        <input class="checkbox" type="checkbox" id="flavor1">
                         <label for="vanilla" >vanilla</label><br>
 
                         
@@ -141,24 +141,20 @@
                         <p id="coneOutput" style="display:none">cone</p>
                         <br>
 
-                        <p id="bowlOutput" style="display:none">bowl</p>
-                        <p id="coneOutput" style="display:none">cone</p>
+                        <p id="flavorOutput1" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>vanilla</p> 
+                        <p id="flavorOutput2" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>chocolate</p>
+                        <p id="flavorOutput3" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>strawberry</p>
+                        <p id="flavorOutput4" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>pistachio</p>
+                        <p id="flavorOutput5" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>banana</p>
+                        <p id="flavorOutput6" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>chocolate chip</p>
                         <br>
 
-                        <p id="flavorOutput1" style="display:none">vanilla</p>
-                        <p id="flavorOutput2" style="display:none">chocolate</p>
-                        <p id="flavorOutput3" style="display:none">strawberry</p>
-                        <p id="flavorOutput4" style="display:none">pistachio</p>
-                        <p id="flavorOutput5" style="display:none">banana</p>
-                        <p id="flavorOutput6" style="display:none">chocolate chip</p>
-                        <br>
-
-                        <p id="toppingOutput1" style="display:none">whipped cream</p>
-                        <p id="toppingOutput2" style="display:none">sprinkles</p>
-                        <p id="toppingOutput3" style="display:none">chocolate sauce</p>
-                        <p id="toppingOutput4" style="display:none">caramel sauce</p>
-                        <p id="toppingOutput5" style="display:none">m&m's</p>
-                        <p id="toppingOutput6" style="display:none">no toppings</p>
+                        <p id="toppingOutput1" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>whipped cream</p>
+                        <p id="toppingOutput2" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>sprinkles</p>
+                        <p id="toppingOutput3" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>chocolate sauce</p>
+                        <p id="toppingOutput4" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>caramel sauce</p>
+                        <p id="toppingOutput5" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>m&m's</p>
+                        <p id="toppingOutput6" style="display:none"><img type="button" id="delete" src="./Images/delete.png"/>no toppings</p>
 
                         <br>
 
