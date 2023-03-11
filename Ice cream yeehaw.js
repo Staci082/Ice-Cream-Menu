@@ -3,44 +3,56 @@
 $("#checkbox1").click(function () {
   if (this.checked) {
     $("#input1").show(); /* shows quantity button upon checking box*/
+    $("#vanillaOutput").show();
   } else {
     $("#input1").hide(); /* hides quantity button upon unchecking box*/
+    $("#vanillaOutput").hide();
   }
 });
 
 $("#checkbox2").click(function () {
   if (this.checked) {
     $("#input2").show();
+    $("#chocolateOutput").show();
   } else {
     $("#input2").hide();
+    $("#chocolateOutput").hide();
   }
 });
 $("#checkbox3").click(function () {
   if (this.checked) {
     $("#input3").show();
+    $("#strawberryOutput").show();
   } else {
     $("#input3").hide();
+    $("#strawberryOutput").hide();
   }
 });
 $("#checkbox4").click(function () {
   if (this.checked) {
     $("#input4").show();
+    $("#pistachioOutput").show();
   } else {
     $("#input4").hide();
+    $("#pistachioOutput").hide();
   }
 });
 $("#checkbox5").click(function () {
   if (this.checked) {
     $("#input5").show();
+    $("#bananaOutput").show();
   } else {
     $("#input5").hide();
+    $("#bananaOutput").hide();
   }
 });
 $("#checkbox6").click(function () {
   if (this.checked) {
     $("#input6").show();
+    $("#chocolateChipOutput").show();
   } else {
     $("#input6").hide();
+    $("#chocolateChipOutput").hide();
   }
 });
 
@@ -68,7 +80,7 @@ $(document).ready(function () {
 });
 
 // working for one id at a time
-function flavorOutput1() {
+/*function flavorOutput1() {
   var checkBox = document.getElementById("checkbox1");
   var basketText = document.getElementById("vanillaOutput");
   if (checkBox.checked == true) {
