@@ -1,6 +1,12 @@
 // bowl & cone buttons
 
-/*$("#bowl").click(function () {
+$('.bowlConeList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
+  $('.bowlConeList :checkbox').each(function() {
+    if (this != e.target)
+      $(this).prop('checked', false);
+  });
+});
+$("#bowl").click(function () {
   if (this.checked) {
     $("#bowlOutput").show();
   } else {
@@ -117,6 +123,36 @@ $("#topping6").click(function () {
   }
 });
 
+// prices
+
+$('.scoopsList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
+  $('.scoopsList :checkbox').each(function() {
+    if (this != e.target)
+      $(this).prop('checked', false);
+  });
+});
+$("#scoop1").click(function () {
+  if (this.checked) {
+    $("#1eur").show();
+  } else {
+    $("#1eur").hide();
+  }
+});
+$("#scoop2").click(function () {
+  if (this.checked) {
+    $("#2eur").show();
+  } else {
+    $("#2eur").hide();
+  }
+});
+$("#scoop3").click(function () {
+  if (this.checked) {
+    $("#3eur").show();
+  } else {
+    $("#3eur").hide();
+  }
+});
+
 /* catagory slide down effect on mobile */
 
 $("#sizesBtn").click(function () {
@@ -134,11 +170,10 @@ $("#basketBtn").click(function () {
 
 /* reset button */
 
-$(document).ready(function () {
   $("#resetBtn").click(function () {
     location.reload(true);
   });
-});
+
 
 // working for one id at a time
 /*function flavorOutput1() {
