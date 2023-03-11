@@ -1,12 +1,22 @@
 
-// bowl & cone buttons
+//scoop buttons
 
-$('.bowlConeList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
+$('.scoopsList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
+  $('.scoopsList :checkbox').each(function() {
+    if (this != e.target)
+      $(this).prop('checked', false);
+  });
+});
+
+
+// bowl & cone buttons
+$('.bowlConeList').on('click', ':checkbox', function(e) {  
   $('.bowlConeList :checkbox').each(function() {
     if (this != e.target)
       $(this).prop('checked', false);
   });
 });
+
 $("#bowl").click(function () {
   if (this.checked) {
     $("#bowlOutput").show();
@@ -82,6 +92,20 @@ $("#flavor6").click(function () {
   }
 });
 
+ // controls how many checkboxes are allowed to be checked at once
+
+$("input[type='checkbox']").change(function(){
+var max_allowed = 3;
+  // count how many boxes have been checked.
+var checked = $("input[type='checkbox']:checked").size();
+  // perform test
+if ( checked > max_allowed ) {
+      // is more than the max so uncheck.
+   $(this).attr("checked", false);
+      // display error message.
+   alert("Please select a maximum of " + max_allowed + " options.");
+}
+});
 
 // topping buttons
 
@@ -144,12 +168,6 @@ $("#topping6").click(function () {  // no toppings
 
 // prices
 
-$('.scoopsList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
-  $('.scoopsList :checkbox').each(function() {
-    if (this != e.target)
-      $(this).prop('checked', false);
-  });
-});
 $("#scoop1").click(function () {
   if (this.checked) {
     $("#1eur").show();

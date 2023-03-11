@@ -121,6 +121,16 @@ input[type=checkbox] {
   width: 2vw;
   accent-color: #ffecf2;
 }
+textarea:focus, input:focus{  /* removes outline on quantity input when active */
+  outline: none;
+}
+
+input[type=number] {
+  text-align:center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 .quantity {
   display: none;
 }
@@ -225,6 +235,23 @@ input[type=checkbox] {
   label,
   p {
     font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  input[type=checkbox] {
+    height: 30px;
+    width: 30px;
+    margin-right: 3vw;
+    accent-color: #ffecf2;
+  }
+  textarea:focus, input:focus{  /* removes outline on quantity input when active */
+    outline: none;
+  }
+  
+  input[type=number] {
+    text-align:center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
   #sizes-box,
   #flavors-box,
@@ -233,7 +260,11 @@ input[type=checkbox] {
     width: 100vw;
     height: auto;
   }
-
+.delete {
+    height: 35px;
+    width: 35px;
+    margin-right: 3vw;
+}
   .orderbtn,
   .resetbtn {
     margin-bottom: 10px;
@@ -253,5 +284,8 @@ input[type=checkbox] {
   #basketCont {
     display: none;
     padding-bottom: 30px;
+  }
+  .basket-output {
+    margin-left: -1vw;
   }
 }
