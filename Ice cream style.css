@@ -193,7 +193,7 @@ p {
 }
 
 /* phone size*/
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .container {
     display: flex;
     flex-direction: column;

@@ -120,7 +120,7 @@ $("#topping6").click(function () {
 /* catagory slide down effect on mobile */
 
 $("#sizesBtn").click(function () {
-  $("#sizesCont").slideToggle("fast");
+  $("#sizesCont, #bowlConeCont").slideToggle("fast");
 });
 $("#flavorsBtn").click(function () {
   $("#flavorsCont").slideToggle("fast");
