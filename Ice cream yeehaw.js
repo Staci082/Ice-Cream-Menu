@@ -168,11 +168,60 @@ $("#basketBtn").click(function () {
   $("#basketCont").slideToggle("fast");
 });
 
+//delete buttons
+
+$("#deleteBowl").click(function(){
+  $("p").remove("#bowlOutput");
+});
+$("#deleteCone").click(function(){
+  $("p").remove("#coneOutput");
+});
+  $("#deleteF1").click(function(){
+    $("p").remove("#flavorOutput1");
+  });
+  $("#deleteF2").click(function(){
+    $("p").remove("#flavorOutput2");
+  });
+  $("#deleteF3").click(function(){
+    $("p").remove("#flavorOutput3");
+  });
+  $("#deleteF4").click(function(){
+    $("p").remove("#flavorOutput4");
+  });
+  $("#deleteF5").click(function(){
+    $("p").remove("#flavorOutput5");
+  });
+  $("#deleteF6").click(function(){
+    $("p").remove("#flavorOutput6");
+  });
+
+  $("#deleteT1").click(function(){
+    $("p").remove("#toppingOutput1");
+  });
+  $("#deleteT2").click(function(){
+    $("p").remove("#toppingOutput2");
+  });
+  $("#deleteT3").click(function(){
+    $("p").remove("#toppingOutput3");
+  });
+  $("#deleteT4").click(function(){
+    $("p").remove("#toppingOutput4");
+  });
+  $("#deleteT5").click(function(){
+    $("p").remove("#toppingOutput5");
+  });
+  $("#deleteT6").click(function(){
+    $("p").remove("#toppingOutput6");
+  });
+
+
+
 /* reset button */
 
   $("#resetBtn").click(function () {
     location.reload(true);
   });
+
 
 
 // working for one id at a time

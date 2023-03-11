@@ -128,12 +128,12 @@ p {
   color: rgba(255, 250, 251, 255);
   text-shadow: 1px 1px 1px black;
 }
-#delete {
+.delete {
   height: 2.5vh;
   margin-right: 20px;
 }
 .total {
-  margin-left: 10vw;
+  margin-left: 2vw;
 }
 .orderbtn-cont {
   position: relative;
