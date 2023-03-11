@@ -47,12 +47,12 @@
                     <div class="bowl-cone-cont" id="bowlConeCont">
                         <ul class="bowl-cone-list" style="list-style: none">
                             <li>
-                                <input type="radio" name="bowl-conebtn" id="bowl" />
+                                <input type="radio" name="bowl-conebtn" id="bowl" onclick="contOutput1()"/>
                                 <label for="a-opt" class="label">bowl</label>
                             </li>
                             
                             <li class="list-item">
-                                <input type="radio" name="bowl-conebtn" id="cone" />
+                                <input type="radio" name="bowl-conebtn" id="cone" onclick="contOutput2()"/>
                                 <label for="b-opt"class="label">cone</label>
                             </li>
                         </ul>
@@ -69,28 +69,28 @@
                     <form class="flavors-list-cont" id="flavorsCont">
 
                         <input type="number" id="input1" class="quantity" min="0" max="3"> 
-                        <input type="checkbox" id="checkbox1" name="flavor" value="vanilla" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox1" name="flavor" value="vanilla" onclick="flavorOutput1()">
                         <label for="vanilla" >vanilla</label><br>
 
                         
                         <input type="number" id="input2" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox2" name="flavor" value="chocolate" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox2" name="flavor" value="chocolate" onclick="">
                         <label for="chocolate">chocolate</label><br>
 
                         <input type="number" id="input3" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox3" name="flavor" value="strawberry" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox3" name="flavor" value="strawberry" onclick="">
                         <label for="strawberry">strawberry</label><br>
 
                         <input type="number" id="input4" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox4" name="flavor" value="pistachio" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox4" name="flavor" value="pistachio" onclick="">
                         <label for="pistachio">pistachio</label><br>
 
                         <input type="number" id="input5" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox5" name="flavor" value="banana" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox5" name="flavor" value="banana" onclick="">
                         <label for="banana">banana</label><br>
 
                         <input type="number" id="input6" class="quantity" min="0" max="3">
-                        <input type="checkbox" id="checkbox6" name="flavor" value="chocolatechip" onclick="myFunction()">
+                        <input type="checkbox" id="checkbox6" name="flavor" value="chocolatechip" onclick="">
                         <label for="chocolate chip">chocolate chip</label><br>
 
                     </form>
@@ -137,12 +137,22 @@
 
                     <div class="basket-output" id="basketOutput">
 
+                        <p id="bowlOutput" style="display:none">bowl</p>
+                        <p id="coneOutput" style="display:none">cone</p>
+                        <br>
+
                         <p id="vanillaOutput" style="display:none">vanilla</p>
                         <p id="chocolateOutput" style="display:none">chocolate</p>
                         <p id="strawberryOutput" style="display:none">strawberry</p>
                         <p id="pistachioOutput" style="display:none">pistachio</p>
                         <p id="bananaOutput" style="display:none">banana</p>
                         <p id="chocolatechipOutput" style="display:none">chocolate chip</p>
+                        <br>
+
+                        <p id="1eur" class="total" style="display:none">1€</p>
+                        <p id="2eur" class="total" style="display:none">2€</p>
+                        <p id="3eur" class="total" style="display:none">3€</p>
+
 
                     </div>
                     
