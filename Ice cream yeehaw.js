@@ -117,9 +117,12 @@ $("#topping5").click(function () {
     $("#toppingOutput5").hide();
   }
 });
-$("#topping6").click(function () {
+$("#topping6").click(function () {  // no toppings
   if (this.checked) {
     $("#toppingOutput6").show();
+    //removing other toppings when none is checked
+    $("p").remove("#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5");
+    $( "#topping1, #topping2, #topping3, #topping4, #topping5" ).prop( "checked", false );
   } else {
     $("#toppingOutput6").hide();
   }
@@ -181,40 +184,60 @@ $("#basketBtn").click(function () {
 //flavors
   $("#deleteF1").click(function(){
     $("p").remove("#flavorOutput1");
+    $( "#flavor1" ).prop( "checked", false );
+    $("#input1").hide();
   });
   $("#deleteF2").click(function(){
     $("p").remove("#flavorOutput2");
+    $( "#flavor2" ).prop( "checked", false );
+    $("#input2").hide();
   });
   $("#deleteF3").click(function(){
     $("p").remove("#flavorOutput3");
+    $( "#flavor3" ).prop( "checked", false );
+    $("#input3").hide();
   });
   $("#deleteF4").click(function(){
     $("p").remove("#flavorOutput4");
+    $( "#flavor4" ).prop( "checked", false );
+    $("#input4").hide();
   });
   $("#deleteF5").click(function(){
     $("p").remove("#flavorOutput5");
+    $( "#flavor5" ).prop( "checked", false );
+    $("#input5").hide();
   });
   $("#deleteF6").click(function(){
     $("p").remove("#flavorOutput6");
+    $( "#flavor6" ).prop( "checked", false );
+    $("#input6").hide();
   });
+
+
 //toppings
   $("#deleteT1").click(function(){
     $("p").remove("#toppingOutput1");
+    $( "#topping1" ).prop( "checked", false );
   });
   $("#deleteT2").click(function(){
     $("p").remove("#toppingOutput2");
+    $( "#topping2" ).prop( "checked", false );
   });
   $("#deleteT3").click(function(){
     $("p").remove("#toppingOutput3");
+    $( "#topping3" ).prop( "checked", false );
   });
   $("#deleteT4").click(function(){
     $("p").remove("#toppingOutput4");
+    $( "#topping4" ).prop( "checked", false );
   });
   $("#deleteT5").click(function(){
     $("p").remove("#toppingOutput5");
+    $( "#topping5" ).prop( "checked", false );
   });
   $("#deleteT6").click(function(){
     $("p").remove("#toppingOutput6");
+    $( "#topping6" ).prop( "checked", false );
   });
 
 
