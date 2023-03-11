@@ -9,6 +9,7 @@ $('.bowlConeList').on('click', ':checkbox', function(e) {   // this function tur
 $("#bowl").click(function () {
   if (this.checked) {
     $("#bowlOutput").show();
+    $("#coneOutput").hide();
   } else {
     $("#bowlOutput").hide();
   }
@@ -16,6 +17,7 @@ $("#bowl").click(function () {
 $("#cone").click(function () {
   if (this.checked) {
     $("#coneOutput").show();
+    $("#bowlOutput").hide();
   } else {
     $("#coneOutput").hide();
   }
@@ -134,19 +136,25 @@ $('.scoopsList').on('click', ':checkbox', function(e) {   // this function turns
 $("#scoop1").click(function () {
   if (this.checked) {
     $("#1eur").show();
+    $("#2eur").hide();
+    $("#3eur").hide();
   } else {
     $("#1eur").hide();
   }
 });
 $("#scoop2").click(function () {
   if (this.checked) {
+    $("#1eur").hide();
     $("#2eur").show();
+    $("#3eur").hide();
   } else {
     $("#2eur").hide();
   }
 });
 $("#scoop3").click(function () {
   if (this.checked) {
+    $("#1eur").hide();
+    $("#2eur").hide();
     $("#3eur").show();
   } else {
     $("#3eur").hide();
@@ -170,12 +178,7 @@ $("#basketBtn").click(function () {
 
 //delete buttons
 
-$("#deleteBowl").click(function(){
-  $("p").remove("#bowlOutput");
-});
-$("#deleteCone").click(function(){
-  $("p").remove("#coneOutput");
-});
+//flavors
   $("#deleteF1").click(function(){
     $("p").remove("#flavorOutput1");
   });
@@ -194,7 +197,7 @@ $("#deleteCone").click(function(){
   $("#deleteF6").click(function(){
     $("p").remove("#flavorOutput6");
   });
-
+//toppings
   $("#deleteT1").click(function(){
     $("p").remove("#toppingOutput1");
   });
