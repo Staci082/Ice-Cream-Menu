@@ -222,40 +222,35 @@ function deleteCheck(e) {
   const item = e.target;
 
   if(item.classList[0] === 'delete') {  
-      const trash = item.parentElement;  
+      const trash = item.parentElement; 
       trash.remove();
+      document.getElementById("checkbox").checked = false;
   }
 }
 
 //flavors
 
-/*  $("#deleteF1").click(function(){
-    $("#flavorOutput1").hide();
+ $("#deleteF1").click(function(){
     $( "#flavor1" ).prop( "checked", false );
     $("#input1").hide();
   });
   $("#deleteF2").click(function(){
-    $("#flavorOutput2").hide();
     $( "#flavor2" ).prop( "checked", false );
     $("#input2").hide();
   });
   $("#deleteF3").click(function(){
-    $("#flavorOutput3").hide();
     $( "#flavor3" ).prop( "checked", false );
     $("#input3").hide();
   });
   $("#deleteF4").click(function(){
-    $("#flavorOutput4").hide();
     $( "#flavor4" ).prop( "checked", false );
     $("#input4").hide();
   });
   $("#deleteF5").click(function(){
-    $("#flavorOutput5").hide();
     $( "#flavor5" ).prop( "checked", false );
     $("#input5").hide();
   });
   $("#deleteF6").click(function(){
-    $("#flavorOutput6").hide();
     $( "#flavor6" ).prop( "checked", false );
     $("#input6").hide();
   });
@@ -264,30 +259,24 @@ function deleteCheck(e) {
 //toppings
 
   $("#deleteT1").click(function(){
-    $("#toppingOutput1").hide();
     $( "#topping1" ).prop( "checked", false );
   });
   $("#deleteT2").click(function(){
-    $("#toppingOutput2").hide();
     $( "#topping2" ).prop( "checked", false );
   });
   $("#deleteT3").click(function(){
-    $("#toppingOutput3").hide();
     $( "#topping3" ).prop( "checked", false );
   });
   $("#deleteT4").click(function(){
-    $("#toppingOutput4").hide();
     $( "#topping4" ).prop( "checked", false );
   });
   $("#deleteT5").click(function(){
-    $("#toppingOutput5").hide();
     $( "#topping5" ).prop( "checked", false );
   });
   $("#deleteT6").click(function(){
-    $("#toppingOutput6").hide();
     $( "#topping6" ).prop( "checked", false );
   });
-*/
+
 
 /* reset button */
 
