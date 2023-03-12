@@ -1,3 +1,4 @@
+const basketOutput = document.querySelector(".basket-output");
 
 //scoop buttons
 
@@ -215,9 +216,20 @@ $("#basketBtn").click(function () {
 
 //delete buttons
 
+basketOutput.addEventListener("click", deleteCheck);
+
+function deleteCheck(e) {  
+  const item = e.target;
+
+  if(item.classList[0] === 'delete') {  
+      const trash = item.parentElement;  
+      trash.remove();
+  }
+}
+
 //flavors
 
-  $("#deleteF1").click(function(){
+/*  $("#deleteF1").click(function(){
     $("#flavorOutput1").hide();
     $( "#flavor1" ).prop( "checked", false );
     $("#input1").hide();
@@ -275,7 +287,7 @@ $("#basketBtn").click(function () {
     $("#toppingOutput6").hide();
     $( "#topping6" ).prop( "checked", false );
   });
-
+*/
 
 /* reset button */
 
@@ -283,21 +295,3 @@ $("#basketBtn").click(function () {
     location.reload(true);
   });
 
-
-
-/* function ValidateFlavorSelection()  {  
-      var checkboxes = document.getElementsByName("flavor");  
-      var numberOfCheckedItems = 0;  
-      for(var i = 0; i < checkboxes.length; i++)  
-      {  
-          if(checkboxes[i].checked)  
-              numberOfCheckedItems++;  
-      }  
-      if(numberOfCheckedItems > 3)  
-      {  
-          alert("You can't select more than three flavors!");  
-          return false;  
-      }  
-  }  
-  ValidateFlavorSelection()
- */
