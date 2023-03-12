@@ -2,19 +2,17 @@ const basketOutput = document.querySelector(".basket-output");
 
 //scoop buttons
 
-$('.scoopsList').on('click', ':checkbox', function(e) {   // this function turns checkboxes into radio buttons
-  $('.scoopsList :checkbox').each(function() {
-    if (this != e.target)
-      $(this).prop('checked', false);
+$(".scoopsList").on("click", ":checkbox", function (e) {
+  // this function turns checkboxes into radio buttons
+  $(".scoopsList :checkbox").each(function () {
+    if (this != e.target) $(this).prop("checked", false);
   });
 });
 
-
 // bowl & cone buttons
-$('.bowlConeList').on('click', ':checkbox', function(e) {  
-  $('.bowlConeList :checkbox').each(function() {
-    if (this != e.target)
-      $(this).prop('checked', false);
+$(".bowlConeList").on("click", ":checkbox", function (e) {
+  $(".bowlConeList :checkbox").each(function () {
+    if (this != e.target) $(this).prop("checked", false);
   });
 });
 
@@ -34,7 +32,6 @@ $("#cone").click(function () {
     $("#coneOutput").hide();
   }
 });
-
 
 /* flavor buttons */
 
@@ -93,19 +90,19 @@ $("#flavor6").click(function () {
   }
 });
 
- // controls how many checkboxes are allowed to be checked at once
+// controls how many checkboxes are allowed to be checked at once
 
-$("input[type='checkbox']").change(function(){
-var max_allowed = 3;
+$("input[type='checkbox']").change(function () {
+  var max_allowed = 3;
   // count how many boxes have been checked.
-var checked = $("input[type='checkbox']:checked").size();
+  var checked = $("input[type='checkbox']:checked").size();
   // perform test
-if ( checked > max_allowed ) {
-      // is more than the max so uncheck.
-   $(this).attr("checked", false);
-      // display error message.
-   alert("Please select a maximum of " + max_allowed + " options.");
-}
+  if (checked > max_allowed) {
+    // is more than the max so uncheck.
+    $(this).attr("checked", false);
+    // display error message.
+    alert("Please select a maximum of " + max_allowed + " options.");
+  }
 });
 
 // topping buttons
@@ -113,8 +110,8 @@ if ( checked > max_allowed ) {
 $("#topping1").click(function () {
   if (this.checked) {
     $("#toppingOutput1").show();
-    $("#toppingOutput6").hide();
-    $( "#topping6" ).prop( "checked", false );
+    $("#noToppingsOutput").hide();
+    $("#noToppings").prop("checked", false);
   } else {
     $("#toppingOutput1").hide();
   }
@@ -122,8 +119,8 @@ $("#topping1").click(function () {
 $("#topping2").click(function () {
   if (this.checked) {
     $("#toppingOutput2").show();
-    $("#toppingOutput6").hide();
-    $( "#topping6" ).prop( "checked", false );
+    $("#noToppingsOutput").hide();
+    $("#noToppings").prop("checked", false);
   } else {
     $("#toppingOutput2").hide();
   }
@@ -131,8 +128,8 @@ $("#topping2").click(function () {
 $("#topping3").click(function () {
   if (this.checked) {
     $("#toppingOutput3").show();
-    $("#toppingOutput6").hide();
-    $( "#topping6" ).prop( "checked", false );
+    $("#noToppingsOutput").hide();
+    $("#noToppings").prop("checked", false);
   } else {
     $("#toppingOutput3").hide();
   }
@@ -140,8 +137,8 @@ $("#topping3").click(function () {
 $("#topping4").click(function () {
   if (this.checked) {
     $("#toppingOutput4").show();
-    $("#toppingOutput6").hide();
-    $( "#topping6" ).prop( "checked", false );
+    $("#noToppingsOutput").hide();
+    $("#noToppings").prop("checked", false);
   } else {
     $("#toppingOutput4").hide();
   }
@@ -149,23 +146,28 @@ $("#topping4").click(function () {
 $("#topping5").click(function () {
   if (this.checked) {
     $("#toppingOutput5").show();
-    $("#toppingOutput6").hide();
-    $( "#topping6" ).prop( "checked", false );
+    $("#noToppingsOutput").hide();
+    $("#noToppings").prop("checked", false);
   } else {
     $("#toppingOutput5").hide();
   }
 });
-$("#topping6").click(function () {  // no toppings
+$("#noToppings").click(function () {
+  // no toppings
   if (this.checked) {
-    $("#toppingOutput6").show();
+    $("#noToppingsOutput").show();
     //removing other toppings when none is checked
-    $("#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5").hide();
-    $( "#topping1, #topping2, #topping3, #topping4, #topping5" ).prop( "checked", false );
+    $(
+      "#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5"
+    ).hide();
+    $("#topping1, #topping2, #topping3, #topping4, #topping5").prop(
+      "checked",
+      false
+    );
   } else {
-    $("#toppingOutput6").hide();
+    $("#noToppingsOutput").hide();
   }
 });
-
 
 // prices
 
@@ -197,7 +199,6 @@ $("#scoop3").click(function () {
   }
 });
 
-
 /* catagory slide down effect on mobile */
 
 $("#sizesBtn").click(function () {
@@ -213,74 +214,69 @@ $("#basketBtn").click(function () {
   $("#basketCont").slideToggle("fast");
 });
 
-
 //delete buttons
 
 basketOutput.addEventListener("click", deleteCheck);
 
-function deleteCheck(e) {  
+function deleteCheck(e) {
   const item = e.target;
 
-  if(item.classList[0] === 'delete') {  
-      const trash = item.parentElement; 
-      trash.remove();
-      document.getElementById("checkbox").checked = false;
+  if (item.classList[0] === "delete") {
+    const trash = item.parentElement;
+    trash.remove();
   }
 }
 
 //flavors
 
- $("#deleteF1").click(function(){
-    $( "#flavor1" ).prop( "checked", false );
-    $("#input1").hide();
-  });
-  $("#deleteF2").click(function(){
-    $( "#flavor2" ).prop( "checked", false );
-    $("#input2").hide();
-  });
-  $("#deleteF3").click(function(){
-    $( "#flavor3" ).prop( "checked", false );
-    $("#input3").hide();
-  });
-  $("#deleteF4").click(function(){
-    $( "#flavor4" ).prop( "checked", false );
-    $("#input4").hide();
-  });
-  $("#deleteF5").click(function(){
-    $( "#flavor5" ).prop( "checked", false );
-    $("#input5").hide();
-  });
-  $("#deleteF6").click(function(){
-    $( "#flavor6" ).prop( "checked", false );
-    $("#input6").hide();
-  });
-
+$("#deleteF1").click(function () {
+  $("#flavor1").prop("checked", false);
+  $("#input1").hide();
+});
+$("#deleteF2").click(function () {
+  $("#flavor2").prop("checked", false);
+  $("#input2").hide();
+});
+$("#deleteF3").click(function () {
+  $("#flavor3").prop("checked", false);
+  $("#input3").hide();
+});
+$("#deleteF4").click(function () {
+  $("#flavor4").prop("checked", false);
+  $("#input4").hide();
+});
+$("#deleteF5").click(function () {
+  $("#flavor5").prop("checked", false);
+  $("#input5").hide();
+});
+$("#deleteF6").click(function () {
+  $("#flavor6").prop("checked", false);
+  $("#input6").hide();
+});
 
 //toppings
 
-  $("#deleteT1").click(function(){
-    $( "#topping1" ).prop( "checked", false );
-  });
-  $("#deleteT2").click(function(){
-    $( "#topping2" ).prop( "checked", false );
-  });
-  $("#deleteT3").click(function(){
-    $( "#topping3" ).prop( "checked", false );
-  });
-  $("#deleteT4").click(function(){
-    $( "#topping4" ).prop( "checked", false );
-  });
-  $("#deleteT5").click(function(){
-    $( "#topping5" ).prop( "checked", false );
-  });
-  $("#deleteT6").click(function(){
-    $( "#topping6" ).prop( "checked", false );
-  });
-
+$("#deleteT1").click(function () {
+  $("#topping1").prop("checked", false);
+});
+$("#deleteT2").click(function () {
+  $("#topping2").prop("checked", false);
+});
+$("#deleteT3").click(function () {
+  $("#topping3").prop("checked", false);
+});
+$("#deleteT4").click(function () {
+  $("#topping4").prop("checked", false);
+});
+$("#deleteT5").click(function () {
+  $("#topping5").prop("checked", false);
+});
+$("#deleteT6").click(function () {
+  $("#noToppings").prop("checked", false);
+});
 
 /* reset button */
 
-  $("#resetBtn").click(function () {
-    location.reload(true);
-  });
-
+$("#resetBtn").click(function () {
+  location.reload(true);
+});
