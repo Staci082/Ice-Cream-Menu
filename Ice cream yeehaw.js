@@ -100,8 +100,6 @@ $("input[type='checkbox']").change(function () {
   if (checked > max_allowed) {
     // is more than the max so uncheck.
     $(this).attr("checked", false);
-    // display error message.
-    alert("Please select a maximum of " + max_allowed + " options.");
   }
 });
 
@@ -152,6 +150,7 @@ $("#topping5").click(function () {
     $("#toppingOutput5").hide();
   }
 });
+
 $("#noToppings").click(function () {
   // no toppings
   if (this.checked) {
@@ -230,7 +229,7 @@ function deleteCheck(e) {
 //flavors
 
 $("#deleteF1").click(function () {
-  $("#flavor1").prop("checked", false);
+  $("#flavor1").prop("checked");
   $("#input1").hide();
 });
 $("#deleteF2").click(function () {
