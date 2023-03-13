@@ -156,13 +156,10 @@ $("#noToppings").click(function () {
   if (this.checked) {
     $("#noToppingsOutput").show();
     //removing other toppings when none is checked
-    $(
-      "#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5"
+    $("#toppingOutput1, #toppingOutput2, #toppingOutput3, #toppingOutput4, #toppingOutput5"
     ).hide();
     $("#topping1, #topping2, #topping3, #topping4, #topping5").prop(
-      "checked",
-      false
-    );
+      "checked", false);
   } else {
     $("#noToppingsOutput").hide();
   }
@@ -198,6 +195,7 @@ $("#scoop3").click(function () {
   }
 });
 
+
 /* catagory slide down effect on mobile */
 
 $("#sizesBtn").click(function () {
@@ -212,6 +210,7 @@ $("#toppingsBtn").click(function () {
 $("#basketBtn").click(function () {
   $("#basketCont").slideToggle("fast");
 });
+
 
 //delete buttons
 
