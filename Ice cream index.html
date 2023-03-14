@@ -30,16 +30,16 @@
                     <div class="scoops-cont"  id="sizesCont">
                         <ul class="scoopsList" style="list-style: none">
                             <li>
-                                <input  type="checkbox" name="scoopbtn" id="scoop1"/>
+                                <input  type="checkbox" id="scoop1"/>
                                 <label for="a-opt" >1 scoop................1€</label>
                             </li>
                             
                             <li>
-                                <input  type="checkbox" name="scoopbtn" id="scoop2" />
+                                <input  type="checkbox" id="scoop2" />
                                 <label for="b-opt">2 scoops.............2€</label>
                             </li>
                             <li>
-                                <input  type="checkbox" name="scoopbtn" id="scoop3"/>
+                                <input  type="checkbox" id="scoop3"/>
                                 <label for="c-opt">3 scoops.............3€</label>
                             </li>
                         </ul>
@@ -49,12 +49,12 @@
                     <div class="bowl-cone-cont" id="bowlConeCont">
                         <ul class="bowlConeList" style="list-style: none">
                             <li>
-                                <input  type="checkbox" name="bowl-conebtn" id="bowl" />
+                                <input  type="checkbox" id="bowl" />
                                 <label for="a-opt" class="label">bowl</label>
                             </li>
                             
                             <li>
-                                <input  type="checkbox" name="bowl-conebtn" id="cone" />
+                                <input  type="checkbox" id="cone" />
                                 <label for="b-opt"class="label">cone</label>
                             </li>
                         </ul>
@@ -68,7 +68,7 @@
                         <h3 type="button" id="flavorsBtn">flavors</h3>
                     </div>
 
-                    <form class="flavors-list-cont" id="flavorsCont">
+                    <form id="flavorsCont">
 
                         <input type="number" id="input1" class="quantity" min="1" max="3" onChange="getVal()"> 
                         <input  type="checkbox" id="flavor1">
@@ -103,7 +103,7 @@
                         <h3 type="button" id="toppingsBtn">toppings</h3>
                     </div>
                     
-                    <form class="toppings-list-cont" id="toppingsCont">
+                    <form id="toppingsCont">
                       
                         <input  type="checkbox" id="topping1" class="topping">
                         <label for="whipped cream">whipped cream</label><br>
@@ -134,7 +134,7 @@
                         <h3 type="button" id="basketBtn">basket</h3>
                     </div>
 
-                    <div id="basketCont">
+                  <div id="basketCont">
 
                     <div class="basket-output" id="basketOutput">
 
@@ -202,7 +202,7 @@
                         <p id="2eur" class="total" style="display:none">2€</p>
                         <p id="3eur" class="total" style="display:none">3€</p>
 
-                    </div>
+                  </div>
                     
                     <div class="orderbtn-cont">
                         <input class="resetbtn" id="resetBtn" type=button value='reset'>

@@ -9,7 +9,60 @@ $(".scoopsList").on("click", ":checkbox", function (e) {
   });
 });
 
+$("#scoop1").click(function () {
+  if (this.checked) {
+    $("#1eur").show();
+    $("#2eur").hide();
+    $("#3eur").hide();
+    $("#flavorsCont").on("click", ":checkbox", function(event){
+      $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
+        return $(this.form).find(":checkbox:checked").length == 1;
+      });
+    });
+  } else {
+    $("#1eur").hide();
+  }
+});
+
+$("#scoop2").click(function () {
+  if (this.checked) {
+    $("#1eur").hide();
+    $("#2eur").show();
+    $("#3eur").hide();
+    $("#flavorsCont").on("click", ":checkbox", function(event){
+      $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
+        return $(this.form).find(":checkbox:checked").length == 2;
+      });
+    });
+  } else {
+    $("#2eur").hide();
+  }
+});
+
+$("#scoop3").click(function () {
+  if (this.checked) {
+    $("#1eur").hide();
+    $("#2eur").hide();
+    $("#3eur").show();
+    $("#flavorsCont").on("click", ":checkbox", function(event){
+      $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
+        return $(this.form).find(":checkbox:checked").length == 3;
+      });
+    });
+  } else {
+    $("#3eur").hide();
+  }
+});
+
+// function for 1 marked checkbox + alert
+// function for 2 marked checkboxes + alert
+// function for 3 marked checkboxes + alert
+
+// function for max 3 toppings + alert
+
+
 // bowl & cone buttons
+
 $(".bowlConeList").on("click", ":checkbox", function (e) {
   $(".bowlConeList :checkbox").each(function () {
     if (this != e.target) $(this).prop("checked", false);
@@ -33,7 +86,8 @@ $("#cone").click(function () {
   }
 });
 
-/* flavor buttons */
+
+// flavor buttons 
 
 $("#flavor1").click(function () {
   if (this.checked) {
@@ -92,6 +146,12 @@ $("#flavor6").click(function () {
 
 
 // topping buttons
+
+$("#toppingsCont").on("click", ":checkbox", function(event){    // this makes the maximum about of choices to 3
+  $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
+    return $(this.form).find(":checkbox:checked").length == 3;
+  });
+});
 
 $("#topping1").click(function () {
   if (this.checked) {
@@ -153,36 +213,6 @@ $("#noToppings").click(function () {
   }
 });
 
-// prices
-
-$("#scoop1").click(function () {
-  if (this.checked) {
-    $("#1eur").show();
-    $("#2eur").hide();
-    $("#3eur").hide();
-  } else {
-    $("#1eur").hide();
-  }
-});
-$("#scoop2").click(function () {
-  if (this.checked) {
-    $("#1eur").hide();
-    $("#2eur").show();
-    $("#3eur").hide();
-  } else {
-    $("#2eur").hide();
-  }
-});
-$("#scoop3").click(function () {
-  if (this.checked) {
-    $("#1eur").hide();
-    $("#2eur").hide();
-    $("#3eur").show();
-  } else {
-    $("#3eur").hide();
-  }
-});
-
 
 /* catagory slide down effect on mobile */
 
@@ -214,26 +244,6 @@ function deleteCheck(e) {
 }
 
 
-function getVal() {
-  let A = document.getElementById("input1").value;
-  document.getElementById("val1").innerHTML = A;
-
-  let B = document.getElementById("input2").value;
-  document.getElementById("val2").innerHTML = B;
-
-  let C = document.getElementById("input3").value;
-  document.getElementById("val3").innerHTML = C;
-
-  let D = document.getElementById("input4").value;
-  document.getElementById("val4").innerHTML = D;
-
-  let E = document.getElementById("input5").value;
-  document.getElementById("val5").innerHTML = E;
-
-  let F = document.getElementById("input6").value;
-  document.getElementById("val6").innerHTML = F;
-}
-
 //flavors
 
 $("#deleteF1").click(function () {
@@ -260,6 +270,30 @@ $("#deleteF6").click(function () {
   $("#flavor6").prop("checked", false);
   $("#input6, #val6").hide();
 });
+
+
+// quantity value
+
+function getVal() {
+  let A = document.getElementById("input1").value;
+  document.getElementById("val1").innerHTML = A;
+
+  let B = document.getElementById("input2").value;
+  document.getElementById("val2").innerHTML = B;
+
+  let C = document.getElementById("input3").value;
+  document.getElementById("val3").innerHTML = C;
+
+  let D = document.getElementById("input4").value;
+  document.getElementById("val4").innerHTML = D;
+
+  let E = document.getElementById("input5").value;
+  document.getElementById("val5").innerHTML = E;
+
+  let F = document.getElementById("input6").value;
+  document.getElementById("val6").innerHTML = F;
+}
+
 
 //toppings
 
