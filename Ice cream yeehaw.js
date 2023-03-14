@@ -90,18 +90,6 @@ $("#flavor6").click(function () {
   }
 });
 
-// controls how many checkboxes are allowed to be checked at once
-
-$("input[type='checkbox']").change(function () {
-  var max_allowed = 3;
-  // count how many boxes have been checked.
-  var checked = $("input[type='checkbox']:checked").size();
-  // perform test
-  if (checked > max_allowed) {
-    // is more than the max so uncheck.
-    $(this).attr("checked", false);
-  }
-});
 
 // topping buttons
 
@@ -223,6 +211,13 @@ function deleteCheck(e) {
     const trash = item.parentElement;
     trash.remove();
   }
+}
+
+function getVal() {
+  let val = document.querySelector('input').value;
+  let showMe = document.querySelector('.scoopQuantity')
+  showMe.innerHTML = val;
+
 }
 
 //flavors
