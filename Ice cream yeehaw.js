@@ -8,7 +8,12 @@ $(".scoopsList").on("click", ":checkbox", function (e) {   // this function turn
   });
 });
 
-$("#scoop1").click(function () { //upon click
+
+// try quantity buttons in the basket, less code
+
+
+
+$("#scoop1").click(function () { // upon click
   if (this.checked) {
     $("#1eur").show();  // shows price in basket
     $("#2eur").hide();  // hides other prices in case they have been clicked on before 
@@ -52,10 +57,6 @@ $("#scoop3").click(function () {
     $("#3eur").hide();
   }
 });
-
-// function for 1 marked checkbox + alert
-// function for 2 marked checkboxes + alert
-// function for 3 marked checkboxes + alert
 
 
 // bowl & cone buttons
@@ -154,9 +155,9 @@ $("#topping1").click(function () {
   if (this.checked) {  
     $("#toppingOutput1").show();  //show topping in basket
     $("#noToppingsOutput").hide();  // hides no toppings output in case it was clicked before this
-    $("#noToppings").prop("checked", false);  // unchecks 'none' (no toppings)
+    $("#noToppings").prop("checked", false);  // unchecks 'none' checkbox (no toppings)
   } else {
-    $("#toppingOutput1").hide(); //hide topping in basket
+    $("#toppingOutput1").hide(); // hide topping in basket
   }
 });
 $("#topping2").click(function () {
@@ -244,7 +245,7 @@ function deleteCheck(e) {
 //flavors
 
 $("#deleteF1").click(function () {
-  $("#flavor1").prop("checked", false);
+  $("#flavor1").prop("checked", false);   // unchecks checkbox after deleting from basket
   $("#input1, #val1").hide();
 });
 $("#deleteF2").click(function () {
@@ -271,9 +272,9 @@ $("#deleteF6").click(function () {
 
 // quantity value
 
-function getVal() {
-  let A = document.getElementById("input1").value;
-  document.getElementById("val1").innerHTML = A;
+function getVal() {  // function is executed in the HTML, onChange="()"
+  let A = document.getElementById("input1").value;  // gets value from mentioned ID
+  document.getElementById("val1").innerHTML = A;    // puts value into the HTML ID
 
   let B = document.getElementById("input2").value;
   document.getElementById("val2").innerHTML = B;
@@ -295,7 +296,7 @@ function getVal() {
 //toppings
 
 $("#deleteT1").click(function () {
-  $("#topping1").prop("checked", false);
+  $("#topping1").prop("checked", false); 
 });
 $("#deleteT2").click(function () {
   $("#topping2").prop("checked", false);
@@ -315,6 +316,6 @@ $("#deleteT6").click(function () {
 
 /* reset button */
 
-$("#resetBtn").click(function () {
-  location.reload(true);
+$("#resetBtn").click(function () {  
+  location.reload(true);   // reloads whole page
 });
