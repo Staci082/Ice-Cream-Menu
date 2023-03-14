@@ -221,7 +221,7 @@ function getVal() {
   let B = document.getElementById("input2").value;
   document.getElementById("val2").innerHTML = B;
 
-  let C = document.getElementById("inpu3").value;
+  let C = document.getElementById("input3").value;
   document.getElementById("val3").innerHTML = C;
 
   let D = document.getElementById("input4").value;
@@ -237,28 +237,28 @@ function getVal() {
 //flavors
 
 $("#deleteF1").click(function () {
-  $("#flavor1").prop("checked");
-  $("#input1").hide();
+  $("#flavor1").prop("checked", false);
+  $("#input1, #val1").hide();
 });
 $("#deleteF2").click(function () {
   $("#flavor2").prop("checked", false);
-  $("#input2").hide();
+  $("#input2, #val2").hide();
 });
 $("#deleteF3").click(function () {
   $("#flavor3").prop("checked", false);
-  $("#input3").hide();
+  $("#input3, #val3").hide();
 });
 $("#deleteF4").click(function () {
   $("#flavor4").prop("checked", false);
-  $("#input4").hide();
+  $("#input4, #val4").hide();
 });
 $("#deleteF5").click(function () {
   $("#flavor5").prop("checked", false);
-  $("#input5").hide();
+  $("#input5, #val5").hide();
 });
 $("#deleteF6").click(function () {
   $("#flavor6").prop("checked", false);
-  $("#input6").hide();
+  $("#input6, #val6").hide();
 });
 
 //toppings
