@@ -75,23 +75,23 @@
                         <label for="vanilla" >vanilla</label><br>
 
                         
-                        <input type="number" id="input2" class="quantity" min="1" max="3">
+                        <input type="number" id="input2" class="quantity" min="1" max="3" onChange="getVal()">
                         <input  type="checkbox" id="flavor2" >
                         <label for="chocolate">chocolate</label><br>
 
-                        <input type="number" id="input3" class="quantity" min="1" max="3">
+                        <input type="number" id="input3" class="quantity" min="1" max="3" onChange="getVal()">
                         <input  type="checkbox" id="flavor3" >
                         <label for="strawberry">strawberry</label><br>
 
-                        <input type="number" id="input4" class="quantity" min="1" max="3">
+                        <input type="number" id="input4" class="quantity" min="1" max="3" onChange="getVal()">
                         <input  type="checkbox" id="flavor4" >
                         <label for="pistachio">pistachio</label><br>
 
-                        <input type="number" id="input5" class="quantity" min="1" max="3">
+                        <input type="number" id="input5" class="quantity" min="1" max="3" onChange="getVal()">
                         <input  type="checkbox" id="flavor5">
                         <label for="banana">banana</label><br>
 
-                        <input type="number" id="input6" class="quantity" min="1" max="3">
+                        <input type="number" id="input6" class="quantity" min="1" max="3" onChange="getVal()">
                         <input  type="checkbox" id="flavor6">
                         <label for="chocolate chip">chocolate chip</label><br>
 
@@ -138,25 +138,43 @@
 
                     <div class="basket-output" id="basketOutput">
 
-                        
-                        <p id="flavorOutput1" style="display:none">
-                            <img type="button" id="deleteF1" class="delete" src="./Images/delete.png"/><div id="scoopQuantity"></div>vanilla</p>
+                        <div class="outputCont">
+                            <p id="flavorOutput1" style="display:none">
+                            <img type="button" id="deleteF1" class="delete" src="./Images/delete.png"/>vanilla</p>
+                            <div id="val1" class="val"></div>
+                        </div>
 
-                        <p id="flavorOutput2" style="display:none">
+                        <div class="outputCont">
+                            <p id="flavorOutput2" style="display:none">
                             <img type="button" id="deleteF2" class="delete" src="./Images/delete.png"/>chocolate</p>
+                            <div id="val2" class="val"></div>
+                        </div>
 
-                        <p id="flavorOutput3" style="display:none">
+                        <div class="outputCont">
+                            <p id="flavorOutput3" style="display:none">
                             <img type="button" id="deleteF3" class="delete" src="./Images/delete.png"/>strawberry</p>
+                            <div id="val3" class="val"></div>
+                        </div>
 
-                        <p id="flavorOutput4" style="display:none">
+                        <div class="outputCont">
+                            <p id="flavorOutput4" style="display:none">
                             <img type="button" id="deleteF4" class="delete" src="./Images/delete.png"/>pistachio</p>
+                            <div id="val4" class="val"></div>
+                        </div>
 
-                        <p id="flavorOutput5" style="display:none">
+                        <div class="outputCont">
+                            <p id="flavorOutput5" style="display:none">
                             <img type="button" id="deleteF5" class="delete" src="./Images/delete.png"/>banana</p>
+                            <div id="val5" class="val"></div>
+                        </div>
 
-                        <p id="flavorOutput6" style="display:none">
+                        <div class="outputCont">
+                            <p id="flavorOutput6" style="display:none">
                             <img type="button" id="deleteF6" class="delete" src="./Images/delete.png"/>chocolate chip</p>
-                        <br>
+                            <div id="val6" class="val"></div>
+                        </div>
+                            <br>
+
 
                         <p id="toppingOutput1" style="display:none">
                             <img type="button" id="deleteT1" class="delete" src="./Images/delete.png"/>whipped cream</p>

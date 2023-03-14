@@ -89,6 +89,13 @@ h3 {
   justify-content: center;
   width: auto;
 }
+.outputCont {
+  display: flex;
+  flex-direction: row;
+}
+.val {
+  margin-left: 1vw;
+}
 /* form containers */
 label,
 p {
@@ -145,8 +152,7 @@ input[type=number] {
 }
 .delete {
   height: 2.5vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-right: 2vw;
 }
 
 .total,
@@ -157,7 +163,7 @@ input[type=number] {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 3vh;
 }
 .orderbtn,

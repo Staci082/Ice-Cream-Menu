@@ -213,9 +213,25 @@ function deleteCheck(e) {
   }
 }
 
+
 function getVal() {
-  let Q = document.getElementById("input1").value;
-  document.getElementById("scoopQuantity").innerHTML = Q;
+  let A = document.getElementById("input1").value;
+  document.getElementById("val1").innerHTML = A;
+
+  let B = document.getElementById("input2").value;
+  document.getElementById("val2").innerHTML = B;
+
+  let C = document.getElementById("inpu3").value;
+  document.getElementById("val3").innerHTML = C;
+
+  let D = document.getElementById("input4").value;
+  document.getElementById("val4").innerHTML = D;
+
+  let E = document.getElementById("input5").value;
+  document.getElementById("val5").innerHTML = E;
+
+  let F = document.getElementById("input6").value;
+  document.getElementById("val6").innerHTML = F;
 }
 
 //flavors
