@@ -214,10 +214,8 @@ function deleteCheck(e) {
 }
 
 function getVal() {
-  let val = document.querySelector('input').value;
-  let showMe = document.querySelector('.scoopQuantity')
-  showMe.innerHTML = val;
-
+  let Q = document.getElementById("input1").value;
+  document.getElementById("scoopQuantity").innerHTML = Q;
 }
 
 //flavors
