@@ -2,19 +2,18 @@ const basketOutput = document.querySelector(".basket-output");
 
 //scoop buttons
 
-$(".scoopsList").on("click", ":checkbox", function (e) {
-  // this function turns checkboxes into radio buttons
+$(".scoopsList").on("click", ":checkbox", function (e) {   // this function turns checkboxes into radio buttons (only allowed to select one)
   $(".scoopsList :checkbox").each(function () {
     if (this != e.target) $(this).prop("checked", false);
   });
 });
 
-$("#scoop1").click(function () {
+$("#scoop1").click(function () { //upon click
   if (this.checked) {
-    $("#1eur").show();
-    $("#2eur").hide();
+    $("#1eur").show();  // shows price in basket
+    $("#2eur").hide();  // hides other prices in case they have been clicked on before 
     $("#3eur").hide();
-    $("#flavorsCont").on("click", ":checkbox", function(event){
+    $("#flavorsCont").on("click", ":checkbox", function(event){  // sets maximum allowed flavors (works with form in HTML)
       $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
         return $(this.form).find(":checkbox:checked").length == 1;
       });
@@ -58,12 +57,10 @@ $("#scoop3").click(function () {
 // function for 2 marked checkboxes + alert
 // function for 3 marked checkboxes + alert
 
-// function for max 3 toppings + alert
-
 
 // bowl & cone buttons
 
-$(".bowlConeList").on("click", ":checkbox", function (e) {
+$(".bowlConeList").on("click", ":checkbox", function (e) {   // this function turns checkboxes into radio buttons (only allowed to select one)
   $(".bowlConeList :checkbox").each(function () {
     if (this != e.target) $(this).prop("checked", false);
   });
@@ -71,10 +68,10 @@ $(".bowlConeList").on("click", ":checkbox", function (e) {
 
 $("#bowl").click(function () {
   if (this.checked) {
-    $("#bowlOutput").show();
-    $("#coneOutput").hide();
+    $("#bowlOutput").show(); // shows bowl in basket
+    $("#coneOutput").hide(); // hides cone in basket in case it was clicked before this
   } else {
-    $("#bowlOutput").hide();
+    $("#bowlOutput").hide();  // hides bowl in basket
   }
 });
 $("#cone").click(function () {
@@ -91,11 +88,11 @@ $("#cone").click(function () {
 
 $("#flavor1").click(function () {
   if (this.checked) {
-    $("#input1").show(); /* shows quantity button upon checking box*/
-    $("#flavorOutput1").show();
+    $("#input1").show();   // shows quantity button upon checking box
+    $("#flavorOutput1").show();  //shows flavor in basket
   } else {
-    $("#input1").hide(); /* hides quantity button upon unchecking box*/
-    $("#flavorOutput1").hide();
+    $("#input1").hide();  // hides quantity button upon unchecking box
+    $("#flavorOutput1").hide();  //hides flavor in basket
   }
 });
 $("#flavor2").click(function () {
@@ -154,12 +151,12 @@ $("#toppingsCont").on("click", ":checkbox", function(event){    // this makes th
 });
 
 $("#topping1").click(function () {
-  if (this.checked) {
-    $("#toppingOutput1").show();
-    $("#noToppingsOutput").hide();
-    $("#noToppings").prop("checked", false);
+  if (this.checked) {  
+    $("#toppingOutput1").show();  //show topping in basket
+    $("#noToppingsOutput").hide();  // hides no toppings output in case it was clicked before this
+    $("#noToppings").prop("checked", false);  // unchecks 'none' (no toppings)
   } else {
-    $("#toppingOutput1").hide();
+    $("#toppingOutput1").hide(); //hide topping in basket
   }
 });
 $("#topping2").click(function () {
