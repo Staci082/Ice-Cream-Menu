@@ -22,6 +22,7 @@ $("#scoop1").click(function () { // upon click
       $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
         return $(this.form).find(":checkbox:checked").length == 1;
       });
+      $(".quantity").hide();
     });
   } else {
     $("#1eur").hide();
@@ -37,6 +38,10 @@ $("#scoop2").click(function () {
       $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
         return $(this.form).find(":checkbox:checked").length == 2;
       });
+      $(".quantity").attr({
+        "max" : 2,
+        "min" : 1
+      })
     });
   } else {
     $("#2eur").hide();
@@ -52,6 +57,10 @@ $("#scoop3").click(function () {
       $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
         return $(this.form).find(":checkbox:checked").length == 3;
       });
+      $(".quantity").attr({
+        "max" : 3,
+        "min" : 1
+    })
     });
   } else {
     $("#3eur").hide();
@@ -212,7 +221,7 @@ $("#noToppings").click(function () {
 });
 
 
-/* catagory slide down effect on mobile */
+// catagory slide down effect on mobile 
 
 $("#sizesBtn").click(function () {
   $("#sizesCont, #bowlConeCont").slideToggle("fast");
@@ -228,7 +237,7 @@ $("#basketBtn").click(function () {
 });
 
 
-//delete buttons
+// delete buttons
 
 basketOutput.addEventListener("click", deleteCheck);
 
